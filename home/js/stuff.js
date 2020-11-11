@@ -26,11 +26,6 @@ $(window).load(initall);
 // Seiteninitialisierung
 function initall()
 {
-	$.loadScript('background/ol.js', function(){
-		$.loadScript('js/ride.js', function(){
-		});
-	});
-
 	jQuery.easing.def = "easeInExpo";
 	$('a').each(function() {
 		if ($(this).attr('target') != '_blank')
@@ -45,39 +40,6 @@ function initall()
 		$('.headersection').css('height','100px');
 	});
 }
-
-
-/*
-        <script src="background/ol.js"></script>
-        <script src="background/geolocation-orientation.js"></script>
-
-        <script>
-            var ct = 0;
-            var h = '';
-            $('.slider').find('img').each(function(){
-                var src = $(this).attr('src');
-                h += '<div id="slide'+ct+'" style="z-index: '+(ct+1)+'; background-image: url('+src+');"></div>';
-                ct++;
-            });
-            $('.slider').html(h);
-            var slidermax = ct-1;
-            $('#slide0').css('opacity',1);
-            slider(0);
-            
-            function slider(nr)
-            {
-                if (nr<slidermax)
-                {
-                    $('#slide'+(nr+1)).animate({opacity: 1},5000,function(){slider((nr+1));});
-                } else
-                {
-                    for (var i=1;i<slidermax;i++) {$('#slide'+i).css('opacity',0)}
-                    $('#slide'+slidermax).animate({opacity: 0},5000,function(){slider(0);});
-                }
-            }
-		</script>
-*/
-
 
 function exitpage(ev,href,forceret)
 {
