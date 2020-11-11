@@ -23,24 +23,44 @@ var scrtsave = 0;
 
 var bgMax = 6;
 var bgCount = 0;
+var bgAlternate = 0;
 var bgArray = [];
+
+var bgFadeTime = 5000;
+var bgFadePause = 7000;
 
 $(window).load(initall);
 
-var bgImg1 = new Image();
-bgImg1.onload = function(){
-	ImageFader(bgImg1.src);
+var bgImg = new Image();
+bgImg.onload = function(x){
+	ImageFader(bgImg.src);
 };
-var bgImg2 = new Image();
-bgImg1.onload = function(){
-	ImageFader(bgImg2.src);
-};
-
 
 // ImageFader
 function ImageFader(whatImage) {
-	console.log(whatImage);
-	$('#background1').css('background-image', whatImage)
+	switch (bgAlternate) {
+		case 0:
+			$('#background1').css('background-image', 'url(' + whatImage + ')');
+			$('#background1').fadeIn(10);
+			bgAlternate = 2;
+		break;
+		case 2:
+			$('#background2').css('background-image', 'url(' + whatImage + ')');
+			$('#background2').fadeIn(bgFadeTime);
+			$('#background1').fadeOut(bgFadeTime);
+			bgAlternate = 1;
+		break;
+		case 1:
+			$('#background1').css('background-image', 'url(' + whatImage + ')');
+			$('#background1').fadeIn(bgFadeTime);
+			$('#background2').fadeOut(bgFadeTime);
+			bgAlternate = 2;
+		break;
+	}
+	window.setTimeout(function() {
+		bgCount = (bgCount + 1) % bgMax;
+		bgImg.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
+	}, bgFadePause);
 };
 
 // Seiteninitialisierung
@@ -54,8 +74,7 @@ function initall()
 	bgArray.sort(function(a,b) {
 		return (Math.random() > Math.random()) ? -1 : 1;
 	});
-console.log("backgrounds/" + bgArray[bgCount] + '.jpg');
-	bgImg1.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
+	bgImg.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
 	
 	// Page Transition Effect
 	jQuery.easing.def = "easeInExpo";
