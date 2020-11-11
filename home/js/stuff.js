@@ -1,6 +1,6 @@
 // ============================================================================================================
 // W3GEO WEBSITE JAVASCRIPT
-// (c)2017 W3GEO OG
+// (c)2017-20 W3GEO OG
 // ============================================================================================================
 jQuery.loadScript = function (url, callback) {
     jQuery.ajax({
@@ -21,11 +21,43 @@ var curimax = 0;
 var curiratio = 0;
 var scrtsave = 0;
 
+var bgMax = 6;
+var bgCount = 0;
+var bgArray = [];
+
 $(window).load(initall);
+
+var bgImg1 = new Image();
+bgImg1.onload = function(){
+	ImageFader(bgImg1.src);
+};
+var bgImg2 = new Image();
+bgImg1.onload = function(){
+	ImageFader(bgImg2.src);
+};
+
+
+// ImageFader
+function ImageFader(whatImage) {
+	console.log(whatImage);
+	$('#background1').css('background-image', whatImage)
+};
 
 // Seiteninitialisierung
 function initall()
 {
+	// BG Image Fader Init
+	$('body').append('<div id="background1" class="bgfaderimage"></div><div id="background2" class="bgfaderimage"></div>')
+	for (var s = 1; s <= bgMax; s++) {
+		bgArray.push(s.toString());
+	}
+	bgArray.sort(function(a,b) {
+		return (Math.random() > Math.random()) ? -1 : 1;
+	});
+console.log("backgrounds/" + bgArray[bgCount] + '.jpg');
+	bgImg1.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
+	
+	// Page Transition Effect
 	jQuery.easing.def = "easeInExpo";
 	$('a').each(function() {
 		if ($(this).attr('target') != '_blank')
