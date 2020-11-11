@@ -16,6 +16,7 @@ html, body, div, td, input, textarea {
 body {
 	background: rgb(0,0,0);
 	background: linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(230,230,230,1) 50%, rgba(60,60,60,1) 100%);
+	background-attachment: fixed;
 }
 
 div {text-align: justify;}
@@ -275,8 +276,8 @@ p {
 	position: relative;
 	width: calc(100% - 70px);
 	background-color: #fff;
-	border: 8px solid #666;
-	border-radius: 30px;
+	border: 2px solid #666;
+	border-radius: 5px;
 	box-shadow: 10px 10px 0px rgba(0,0,0,.3);
 	padding: 20px;
 	margin-top: 40px;
@@ -293,8 +294,8 @@ p {
 	width: 0; 
 	height: 0; 
 	top: 100%;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
+	border-left: 36px solid transparent;
+	border-right: 36px solid transparent;
 	border-top: 30px solid #666;
 }
 .bubble.left:before {
@@ -309,9 +310,9 @@ p {
 	width: 0; 
 	height: 0; 
 	top: 100%;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #fff;
+	border-left: 26px solid transparent;
+	border-right: 26px solid transparent;
+	border-top: 26px solid #fff;
 }
 .bubble.left:after {
 	left: 40px;
@@ -401,8 +402,8 @@ p {
 	padding: 0px;
 	height: 40px;
 	background-color: #fff;
-	border: 8px solid #666;
-	border-radius: 30px;
+	border: 2px solid #666;
+	border-radius: 5px;
 	box-shadow: 10px 10px 0px rgba(0,0,0,.3);
 	margin: 9px;
 	overflow: hidden;
@@ -471,8 +472,8 @@ p {
 	height: 160px;
 
 	background-color: #fff;
-	border: 8px solid #666;
-	border-radius: 30px;
+	border: 2px solid #666;
+	border-radius: 5px;
 	box-shadow: 10px 10px 0px rgba(0,0,0,.3);
 	padding: 20px;
 	margin: 10px;
@@ -572,22 +573,21 @@ p {
 	overflow: hidden;
 
 	background-color: #fff;
-	border: 6px solid #666;
-	border-radius: 30px;
+	border: 2px solid #666;
+	border-radius: 5px;
 	border-top-right-radius: 0px;
 	box-shadow: 10px 10px 0px rgba(0,0,0,.3);
 }
 .oneproject:hover {
-	border: 8px solid #333;
-	margin: 8px;
-	margin-top: 38px;
+	border: 2px solid #333;
+	border-radius: 10px;
 }
 
 
 .oneproject.active {
 	width: calc(100% - 80px);
 	height: auto;
-	border: 8px solid #666;
+	border: 2px solid #666;
 	margin: 10px;
 	margin-top: 40px;
 	cursor: default;
@@ -596,7 +596,7 @@ p {
 .oneproject.active:hover {
 	width: calc(100% - 80px);
 	height: auto;
-	border: 8px solid #666;
+	border: 2px solid #666;
 	cursor: default;
 }
 
@@ -624,7 +624,7 @@ p {
 	.oneproject.active {
 		width: calc(100% - 58px);
 		height: auto;
-		border: 8px solid #666;
+		border: 2px solid #666;
 		margin: 0px;
 		margin-top: 28px;
 		cursor: default;
@@ -632,7 +632,7 @@ p {
 	.oneproject.active:hover {
 		width: calc(100% - 58px);
 		height: auto;
-		border: 8px solid #666;
+		border: 2px solid #666;
 		cursor: default;
 	}
 }
