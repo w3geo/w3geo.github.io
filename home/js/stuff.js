@@ -1,6 +1,6 @@
 // ============================================================================================================
 // W3GEO WEBSITE JAVASCRIPT
-// (c)2017 W3GEO OG
+// (c)2017-20 W3GEO OG
 // ============================================================================================================
 jQuery.loadScript = function (url, callback) {
     jQuery.ajax({
@@ -21,16 +21,62 @@ var curimax = 0;
 var curiratio = 0;
 var scrtsave = 0;
 
+var bgMax = 6;
+var bgCount = 0;
+var bgAlternate = 0;
+var bgArray = [];
+
+var bgFadeTime = 5000;
+var bgFadePause = 7000;
+
 $(window).load(initall);
+
+var bgImg = new Image();
+bgImg.onload = function(x){
+	ImageFader(bgImg.src);
+};
+
+// ImageFader
+function ImageFader(whatImage) {
+	switch (bgAlternate) {
+		case 0:
+			$('#background1').css('background-image', 'url(' + whatImage + ')');
+			$('#background1').fadeIn(10);
+			bgAlternate = 2;
+		break;
+		case 2:
+			$('#background2').css('background-image', 'url(' + whatImage + ')');
+			$('#background2').fadeIn(bgFadeTime);
+			$('#background1').fadeOut(bgFadeTime);
+			bgAlternate = 1;
+		break;
+		case 1:
+			$('#background1').css('background-image', 'url(' + whatImage + ')');
+			$('#background1').fadeIn(bgFadeTime);
+			$('#background2').fadeOut(bgFadeTime);
+			bgAlternate = 2;
+		break;
+	}
+	window.setTimeout(function() {
+		bgCount = (bgCount + 1) % bgMax;
+		bgImg.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
+	}, bgFadePause);
+};
 
 // Seiteninitialisierung
 function initall()
 {
-	$.loadScript('background/ol.js', function(){
-		$.loadScript('js/ride.js', function(){
-		});
+	// BG Image Fader Init
+	$('body').append('<div id="background1" class="bgfaderimage"></div><div id="background2" class="bgfaderimage"></div>')
+	for (var s = 1; s <= bgMax; s++) {
+		bgArray.push(s.toString());
+	}
+	bgArray.sort(function(a,b) {
+		return (Math.random() > Math.random()) ? -1 : 1;
 	});
-
+	bgImg.src = "backgrounds/" + bgArray[bgCount] + '.jpg';
+	
+	// Page Transition Effect
 	jQuery.easing.def = "easeInExpo";
 	$('a').each(function() {
 		if ($(this).attr('target') != '_blank')
@@ -45,39 +91,6 @@ function initall()
 		$('.headersection').css('height','100px');
 	});
 }
-
-
-/*
-        <script src="background/ol.js"></script>
-        <script src="background/geolocation-orientation.js"></script>
-
-        <script>
-            var ct = 0;
-            var h = '';
-            $('.slider').find('img').each(function(){
-                var src = $(this).attr('src');
-                h += '<div id="slide'+ct+'" style="z-index: '+(ct+1)+'; background-image: url('+src+');"></div>';
-                ct++;
-            });
-            $('.slider').html(h);
-            var slidermax = ct-1;
-            $('#slide0').css('opacity',1);
-            slider(0);
-            
-            function slider(nr)
-            {
-                if (nr<slidermax)
-                {
-                    $('#slide'+(nr+1)).animate({opacity: 1},5000,function(){slider((nr+1));});
-                } else
-                {
-                    for (var i=1;i<slidermax;i++) {$('#slide'+i).css('opacity',0)}
-                    $('#slide'+slidermax).animate({opacity: 0},5000,function(){slider(0);});
-                }
-            }
-		</script>
-*/
-
 
 function exitpage(ev,href,forceret)
 {
