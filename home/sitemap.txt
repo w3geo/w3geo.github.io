@@ -5,6 +5,7 @@ https://w3geo.at/kontakt-impressum.html
 https://w3geo.at/leistungen-beratung-konzeption-lastenhefterstellung.html
 https://w3geo.at/produkte-und-leistungen.html
 https://w3geo.at/referenzen-demos-showcase.html
+https://w3geo.at/das-team-und-partner.html
 https://w3geo.at/routing-geocoding-geodatengenerierung.html
 https://w3geo.at/typische-anwendungsfaelle-usecases.html
 https://w3geo.at/visualisierung-von-geodaten-geoinformationssystem-auswertungen.html
