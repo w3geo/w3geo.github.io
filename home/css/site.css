@@ -552,6 +552,49 @@ p {
 	}
 }
 
+/* Team --------------------------------------------------- */
+/* --------------------------------------------------------------- */
+.teamimage.full {
+	width: 100%;
+	height: auto;
+}
+.teamimage.half {
+	vertical-align: top;
+	display: inline-block;
+	width: 50%;
+	max-width: 200px;
+	height: auto;
+}
+
+.teamaside {
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.teamhorizontal span {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 900px) {
+	.teamhorizontal span {
+		display: block;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 660px) {
+	.teamaside {
+		display: block;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+}
+
 
 /* Referenzen --------------------------------------------------- */
 /* --------------------------------------------------------------- */
