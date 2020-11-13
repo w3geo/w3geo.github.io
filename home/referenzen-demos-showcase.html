@@ -30,6 +30,17 @@
             </div>
 		</div>
 
+    <div class="imageviewer">
+      <div class="backblur" onClick="zoom(this,-2,event)"></div>
+      <div class="currentimage">
+        <img src="">
+        <div class="imgswitch close" onClick="zoom(this,-2,event)"></div>
+        <div class="imgswitch prev" onClick="zoom(this,-1)"></div>
+        <div class="imgswitch next" onClick="zoom(this,1)"></div>
+      </div>
+    </div>
+
+  
 		<div class="content toppad70">
         	<div class="bubble left">
                 <h1>Einige Projekte und Referenzen</h1>
@@ -37,28 +48,43 @@
                 <p class="description">Hinweis: Da einige unserer Projekte (zumindest Teile davon) nicht für den öffentlichen Zugang konzipiert sind, haben wir bestimmte Bereiche der Screenshots aus Datenschutzgründen teilweise unkenntlich machen müssen. Bitte haben Sie dafür Verständnis!</p>
 			</div>
         
-
-			<div class="imageviewer">
-				<div class="backblur" onClick="zoom(this,-2,event)"></div>
-				<div class="currentimage">
-					<img src="">
-                    <div class="imgswitch close" onClick="zoom(this,-2,event)"></div>
-                    <div class="imgswitch prev" onClick="zoom(this,-1)"></div>
-                    <div class="imgswitch next" onClick="zoom(this,1)"></div>
-                </div>
-            </div>
-
 			<div class="allprojects">
 
+          <div class="oneproject" filename="ama" filecount="2">
+            <div class="bigimg"></div>
+              <h2>AMA (Mobile) Webapplikationen</h2>
+              <table>
+                  <tr><td>Beschreibung:</td>
+                    <td><p>Für Agrarmarkt Austria (AMA) sind wir seit 2019 in den Bereichen Consulting und Unterstützung bei der Softwareentwicklung für moderne kartenbasierte Web-Applikationen tätig.</p>
+                      <p>Diese sollen auf verschiedenen Endgeräten (PCs, Tablets, Smartphones) komfortabel bedienbar sein, und räumliche Sachverhalte auf einfache Art vermitteln.</p>
+                    <tr><td>Schwerpunkte:</td><td><ul>
+                      <li>Konzeption kartographischer Inhalte (Choroplethenkarten) und der Interaktivität dynamischer Karten</li>
+                      <li>Beratung hinsichtlich Stack und Entwicklungsumegebung moderner JavaScript Applikationen</li>
+                      <li>Unterstützung bei der Umsetzung der Software „AMA Flächenauswertung“ mit OpenLayers (Kartendarstellung) und Angular (Web-Framwork)</li>
+                      <li>Umsetzung eines schlanken OpenLayers-Wrappers für die einfache Einbindung von Karten, Geoinformation und räumlichen Editierfunktionen in unternehmensweite mobile AMA-Webapplikationen auf Basis von Ionic/Cordova, Angular und Oracle Apex</li>
+                </ul></td></tr>
+                    <tr><td>Zeitraum:</td>
+                    <td>2019 bis heute</td></tr>
+                    <tr><td>Link:</td>
+                    <td><a href="https://flaechenauswertung.services.ama.at/" target="_blank">flaechenauswertung.services.ama.at</a></td></tr>
+                    <tr><td>Kunde:</td>
+                      <td><a href="https://www.ama.at/" target="_blank">AMA</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ama.png" class="reflogo"></td></tr>
+                  </table>
+                <div class="thumbs"></div>
+                <div class="whiteout"></div>
+                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          </div>
 
-                  <div class="oneproject" filename="standortnoe" filecount="10" video09="https://www.youtube.com/watch?v=LzRAE8-abss" video10="https://www.youtube.com/watch?v=Rs_qh-Ww4Pw">
+
+                  <div class="oneproject" filename="standortnoe" filecount="9" video09="https://www.youtube.com/watch?v=I-ikpHQfxvA">
                         <div class="bigimg"></div>
-                      <h2>Plattform standort-noe.at</h2>
+                      <h2>Plattform standortkompass.at</h2>
                       <table>
                           <tr><td>Beschreibung:</td>
-                            <td><p>Für die Wirschaftsagentur des Landes Niederösterreich haben wir als Teil der w3geo OG das Portal www.standort-noe.at für die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das vollresponsive Frontend wird ergänzt durch umfangreiche Administrationswerkzeuge, welche sowohl Kunden wie auch Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.</p>
-                        <p>Eine Besonderheit ist die innovative und in dieser Form einzigartige Kartenapplikation, welche synchron mit der Datenbanksuche Standorte visualisiert und zusätzliche Geoinformationen abbildet - das alles mit hoher Performance auch auf mobilen Endgeräten.</p>
-                        <p>Eine zusätzliche herausforderung war die Kopplung an das Intranet CRM, welche über gesicherte Schnittstellen umgesetzt wurde. Das war in der Form nur möglich, weil auch das Hosting der Datenbank und des Geoservers von uns betreut wird.</p></td></tr>
+                            <td><p>Für die Wirschaftsagentur des Landes Niederösterreich haben wir als Teil der w3geo OG das Portal www.standortkompass.at für die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das vollresponsive Frontend wird ergänzt durch umfangreiche Administrationswerkzeuge, welche sowohl Kunden wie auch Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.</p>
+                              <p>Für dieses Projekt durften wir 2017 gemeinsam mit dem Kunden den Preis für den 2. Platz in der Sparte "IT" beim Constantinus Award entgegennehmen.</p>
+                              <p>Eine Besonderheit ist die innovative und in dieser Form einzigartige Kartenapplikation, welche synchron mit der Datenbanksuche Standorte visualisiert und zusätzliche Geoinformationen abbildet - das alles mit hoher Performance auch auf mobilen Endgeräten.</p>
+                              <p>Eine zusätzliche herausforderung war die Kopplung an das Intranet CRM, welche über gesicherte Schnittstellen umgesetzt wurde. Das war in der Form nur möglich, weil auch das Hosting der Datenbank und des Geoservers von uns betreut wird.</p></td></tr>
                             <tr><td>Schwerpunkte:</td><td><ul>
                               <li>Konzeption, Agile Entwicklung</li>
                               <li> Programmierung Web-Applikation</li>
@@ -74,11 +100,11 @@
                         </tr>
                             <tr><td>Zeitraum:</td>
                             <td>2016 bis heute</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>w3geo OG, ecoplus GmbH</td></tr>
                             <tr><td>Link:</td>
-                            <td><a href="http://www.standort-noe.at" target="_blank">www.standort-noe.at</a></td></tr>
-                        </table>
+                            <td><a href="http://www.standortkompass.at" target="_blank">www.standortkompass.at</a></td></tr>
+                            <tr><td>Kunde:</td>
+                              <td><a href="https://www.ecoplus.at" target="_blank">ecoplus GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ecoplus.png" class="reflogo"></td></tr>
+                          </table>
                         <div class="thumbs"></div>
                         <div class="whiteout"></div>
                         <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
@@ -109,29 +135,6 @@
                             <td>2016/17</td></tr>
                             <tr><td>Kunde:</td>
                             <td>ISTmobil GmbH</td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>
-
-                  <div class="oneproject" filename="energie" filecount="02">
-                        <div class="bigimg"></div>
-                      <h2>Innovative Energieprojekte 2.0</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Erarbeitung einer Struktur zur systematischen Erfassung, Bewertung und Veröffentlichung von innovativen Energieprojekten.</p>
-								<p>Durch die Verwendung eines Webformulars mit Datenbankanbindung soll die Eingabe von Projekten erleichtert und von unterschiedlichen Personen (intern, extern) ohne proprietärer GIS-Software ermöglicht werden.</p>
-                            </td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li>Konzeption einer Webplattform</li>
-                              <li>automatische Verortung von eingegebenen Projekten</li>
-							  <li>automatische Freigabe bzw. Übergabe an den Onlinestadtplan der Stadt Wien</li>
-                        </ul></td></tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>seit 2016</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>Stadt Wien, Magistratsabteilung 20 Energieplanung</td></tr>
                         </table>
                         <div class="thumbs"></div>
                         <div class="whiteout"></div>

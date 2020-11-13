@@ -643,6 +643,12 @@ p {
 	cursor: default;
 }
 
+.reflogo {
+	display: inline-block;
+	height: 80px;
+	width: auto;
+	vertical-align: top;
+}
 
 @media screen and (max-width: 1060px) {
 	.allprojects {
