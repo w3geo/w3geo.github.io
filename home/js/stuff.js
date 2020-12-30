@@ -87,9 +87,9 @@ function initall()
 		}
     });	
 	$('.headernavi').animate({'top':'0px'},300);
-//	$('.curtain').animate({'bottom':'-100%'},500,function(){
-//		$('.headersection').css('height','100px');
-//	});
+	$('.curtain').animate({'bottom':'-100%'},500,function(){
+		$('.headersection').css('height','100px');
+	});
 }
 
 function exitpage(ev,href,forceret)
