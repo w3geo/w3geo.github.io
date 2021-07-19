@@ -1,6 +1,6 @@
 // ============================================================================================================
 // W3GEO WEBSITE JAVASCRIPT
-// (c)2017-20 W3GEO OG
+// (c)2017-20 w3geo GmbH
 // ============================================================================================================
 jQuery.loadScript = function (url, callback) {
     jQuery.ajax({
@@ -21,7 +21,7 @@ var curimax = 0;
 var curiratio = 0;
 var scrtsave = 0;
 
-var bgMax = 6;
+var bgMax = 15;
 var bgCount = 0;
 var bgAlternate = 0;
 var bgArray = [];

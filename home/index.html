@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-        <title>w3geo OG - Die Spezialisten für geodatenbasierende Portal-Anwendungen, Karten und Visualisierungen</title>
+        <title>w3geo GmbH - Die Spezialisten für geodatenbasierende Portal-Anwendungen, Karten und Visualisierungen</title>
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/site.css" rel="stylesheet">
@@ -33,11 +33,94 @@
 	    <div class="content toppad70">
         	<div class="bubble left">
                 <h1>Willkommen auf der Homepage von w3geo!</h1>
-				<p>Wir sind Ihr Nummer 1 Ansprechpartner für die Erstellung von Produkten auf der Basis von Geodaten, sei es Karten (Print und Online), Datenbank-Anwendungen, Visualisierung einfacher bis komplexer geografischer Daten und vieles mehr. In der w3geo OG vereinigen drei Unternehmen ihre jeweilige Knowledge Leadership und ihre Human Ressources zu projektorientierter Lösungskompetenz, die auch international keinen Vergleich zu scheuen braucht.</p>
+				<p>Wir sind Ihr Nummer 1 Ansprechpartner für die Erstellung von Produkten auf der Basis von Geodaten, sei es Karten (Print und Online), Datenbank-Anwendungen, Visualisierung einfacher bis komplexer geografischer Daten und vieles mehr. In der w3geo GmbH vereinigen drei Unternehmen ihre jeweilige Knowledge Leadership und ihre Human Ressources zu projektorientierter Lösungskompetenz, die auch international keinen Vergleich zu scheuen braucht.</p>
 			</div>            
         	<div class="bubble right">
 	            Legen Sie uns ihr Anliegen dar und lassen Sie sich persönlich von unserem Fachwissen und unserem Know How überzeugen - die Seite Kontakt zeigt Ihnen alle Möglichkeiten auf, um mit uns in Verbindung zu treten. Oder Sie lassen Sich erst durch unsere Referenzen überzeugen oder finden in den Anwendungsfällen genau die Problemstellung, welche auch die Ihre ist!
 			</div>
 		</div>
-    </body>
+
+		<style>
+			.xmas {
+				width: 1280px;
+				height: calc(100% - 35px);
+				left: calc(50% - 640px);
+				top: 25px;
+				background-color: #fff;
+				border: 3px solid #aaa;
+				z-index: 100000;
+				position: fixed;
+				overflow: auto;
+				box-sizing: border-box;
+				display: none;
+			}
+			.xmas p {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.xmas .ontop {
+				width: 100%;
+				height: auto;
+			}
+			.closexmas {
+				display: none;
+				position: fixed;
+				right: calc(50% - 640px);
+				top: 4px;
+				cursor: pointer;
+				color: red;
+				font-weight: bold;
+				z-index: 100000;
+
+			}
+			.xmas .below {
+				width: calc(50% - 25px);
+				height: auto;
+				margin: 10px;
+			}
+			@media screen and (max-width: 600px) {
+				.xmas .below {
+					width: calc(100% - 25px);
+					margin: 10px;
+				}
+
+			}
+			@media screen and (max-width: 1280px) {
+				.xmas {
+					width: 94%;
+					height: 95%;
+					left: 3%;
+				}
+				.closexmas {
+					right: 3%;
+				}
+			}
+
+		</style>
+		<script>
+			function closexmas() {
+				$('.xmas').remove();
+				$('.closexmas').remove();
+				$('.curtain').animate({'bottom':'-100%'},500,function(){
+					$('.headersection').css('height','100px');
+				});
+			}
+		</script>
+		<span class="closexmas" onclick="closexmas()">Schließen</span>
+		<div class="xmas">
+			<img class="ontop" src="bilder/xmas/xmas-bg.jpg">
+			<p>Das wünschen wir all unseren Kunden, Partnern und allen Menschen, die uns geholfen haben, so viele Projekte so erfolgreich zu beginnen, aufrechtzuerhalten und zu beenden im vergangenen Jahr</p>
+			<p>2020 war für viele Menschen schwierig und wir hoffen - wie alle - auf eine Rückkehr zur Normalität im neuen Jahr.</p>
+			<p>Als Weihnachtsgeschenk wollten wir heuer ein Zeichen der Hoffnung setzen und haben eine Spende an die <a href="http://www.mirnomore.org/">Mirno More Friedensflotte</a> getätigt. Andreas aus unserem Team liegt dieses Projekt besonders am Herzen, ist er doch auch jedes Jahr unentgeltlich als Skipper mit dabei und verschafft so vielen sozial benachteiligten Kindern aus unterschiedlichen Ländern ein einzigartiges Erlebnis und die Erkenntnis, das am Ende des Tages die beste Strategie immer ist: <b>Arbeiten im Team und vorwärts blicken!</b></p>
+			<p>In diesem Sinne wünschen wir geruhsame Feiertage und einen guten Rutsch ins Jahr 2021!</p>
+			<img class="below" src="bilder/xmas/mirnomore1.jpg">
+			<img class="below" src="bilder/xmas/mirnomore2.jpg">
+			<img class="below" src="bilder/xmas/mirnomore3.jpg">
+			<img class="below" src="bilder/xmas/mirnomore4.jpg">
+			<img class="below" src="bilder/xmas/mirnomore5.jpg">
+			<img class="below" src="bilder/xmas/mirnomore6.jpg">
+			<img class="below" src="">
+		</div>
+
+	</body>
 </html>

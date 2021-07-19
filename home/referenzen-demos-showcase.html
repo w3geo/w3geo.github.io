@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-        <title>w3geo OG - Ausgewählte Projekte und Referenzen</title>
+        <title>w3geo GmbH - Ausgewählte Projekte und Referenzen</title>
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/site.css" rel="stylesheet">
@@ -30,173 +30,271 @@
             </div>
 		</div>
 
+    <div class="imageviewer">
+      <div class="backblur" onClick="zoom(this,-2,event)"></div>
+      <div class="currentimage">
+        <img src="">
+        <div class="imgswitch close" onClick="zoom(this,-2,event)"></div>
+        <div class="imgswitch prev" onClick="zoom(this,-1)"></div>
+        <div class="imgswitch next" onClick="zoom(this,1)"></div>
+      </div>
+    </div>
+
+  
 		<div class="content toppad70">
         	<div class="bubble left">
                 <h1>Einige Projekte und Referenzen</h1>
-                <p>Auf dieser Seite präsentieren wir ausgewähte Projekte, welche die w3geo OG als Hauptauftragnehmer oder Teile unseres Teams als eigenständige Unternehmen umgesetzt haben.</p>
+                <p>Auf dieser Seite präsentieren wir ausgewähte Projekte, welche die w3geo GmbH als Hauptauftragnehmer oder Teile unseres Teams als eigenständige Unternehmen umgesetzt haben.</p>
                 <p class="description">Hinweis: Da einige unserer Projekte (zumindest Teile davon) nicht für den öffentlichen Zugang konzipiert sind, haben wir bestimmte Bereiche der Screenshots aus Datenschutzgründen teilweise unkenntlich machen müssen. Bitte haben Sie dafür Verständnis!</p>
 			</div>
         
-
-			<div class="imageviewer">
-				<div class="backblur" onClick="zoom(this,-2,event)"></div>
-				<div class="currentimage">
-					<img src="">
-                    <div class="imgswitch close" onClick="zoom(this,-2,event)"></div>
-                    <div class="imgswitch prev" onClick="zoom(this,-1)"></div>
-                    <div class="imgswitch next" onClick="zoom(this,1)"></div>
-                </div>
-            </div>
-
 			<div class="allprojects">
 
+          <div class="oneproject" filename="ama" filecount="2">
+            <div class="bigimg"></div>
+              <h2>AMA (Mobile) Webapplikationen</h2>
+              <table>
+                  <tr><td>Beschreibung:</td>
+                    <td><p>Für Agrarmarkt Austria (AMA) sind wir seit 2019 in den Bereichen Consulting und Unterstützung bei der Softwareentwicklung für moderne kartenbasierte Web-Applikationen tätig.</p>
+                      <p>Diese sollen auf verschiedenen Endgeräten (PCs, Tablets, Smartphones) komfortabel bedienbar sein, und räumliche Sachverhalte auf einfache Art vermitteln.</p>
+                    <tr><td>Schwerpunkte:</td><td><ul>
+                      <li>Konzeption kartographischer Inhalte (Choroplethenkarten) und der Interaktivität dynamischer Karten</li>
+                      <li>Beratung hinsichtlich Stack und Entwicklungsumegebung moderner JavaScript Applikationen</li>
+                      <li>Unterstützung bei der Umsetzung der Software „AMA Flächenauswertung“ mit OpenLayers (Kartendarstellung) und Angular (Web-Framwork)</li>
+                      <li>Umsetzung eines schlanken OpenLayers-Wrappers für die einfache Einbindung von Karten, Geoinformation und räumlichen Editierfunktionen in unternehmensweite mobile AMA-Webapplikationen auf Basis von Ionic/Cordova, Angular und Oracle Apex</li>
+                </ul></td></tr>
+                    <tr><td>Zeitraum:</td>
+                    <td>2019 bis heute</td></tr>
+                    <tr><td>Link:</td>
+                    <td><a href="https://flaechenauswertung.services.ama.at/" target="_blank">flaechenauswertung.services.ama.at</a></td></tr>
+                    <tr><td>Kunde:</td>
+                      <td><a href="https://www.ama.at/" target="_blank">AMA</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ama.png" class="reflogo"></td></tr>
+                  </table>
+                <div class="thumbs"></div>
+                <div class="whiteout"></div>
+                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          </div>
 
-                  <div class="oneproject" filename="standortnoe" filecount="10" video09="https://www.youtube.com/watch?v=LzRAE8-abss" video10="https://www.youtube.com/watch?v=Rs_qh-Ww4Pw">
-                        <div class="bigimg"></div>
-                      <h2>Plattform standort-noe.at</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Für die Wirschaftsagentur des Landes Niederösterreich haben wir als Teil der w3geo OG das Portal www.standort-noe.at für die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das vollresponsive Frontend wird ergänzt durch umfangreiche Administrationswerkzeuge, welche sowohl Kunden wie auch Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.</p>
-                        <p>Eine Besonderheit ist die innovative und in dieser Form einzigartige Kartenapplikation, welche synchron mit der Datenbanksuche Standorte visualisiert und zusätzliche Geoinformationen abbildet - das alles mit hoher Performance auch auf mobilen Endgeräten.</p>
-                        <p>Eine zusätzliche herausforderung war die Kopplung an das Intranet CRM, welche über gesicherte Schnittstellen umgesetzt wurde. Das war in der Form nur möglich, weil auch das Hosting der Datenbank und des Geoservers von uns betreut wird.</p></td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li>Konzeption, Agile Entwicklung</li>
-                              <li> Programmierung Web-Applikation</li>
-                              <li>Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver / OpenLayers</li>
-                              <li>Hosting/Serverbetreuung</li>
-                        </ul></td></tr>
-                            <tr><td>Besonderheiten:</td>
-                            <td><ul>
-                              <li>Die Kartenapplikation ist trotz umfangreicher Datenbestände hochperformant auch auf mobilen Endgeräten</li>
-                              <li>Kopplung zwischen Microsoft CRM und Unix-Applikation via Schnittstellen</li>
-                              <li>Statistik und Controlling-Mechanismen</li>
-                            </ul>                        </td>
-                        </tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>2016 bis heute</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>w3geo OG, ecoplus GmbH</td></tr>
-                            <tr><td>Link:</td>
-                            <td><a href="http://www.standort-noe.at" target="_blank">www.standort-noe.at</a></td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>
+          <div class="oneproject" filename="istmobil" filecount="8" video08="https://www.youtube.com/watch?v=bbxIV68FcqI">
+            <div class="bigimg"></div>
+          <h2>ISTmobil Dispositionssoftware</h2>
+          <table>
+              <tr><td>Beschreibung:</td>
+                <td><p>Für die Firma ISTmobil GmbH entwickeln und betreuen wir seit 2014 ein automatisiertes Fahrzeugs-Dispositionssystem. Die webbasierte Software ist eine komplexe Verbindung aus Verwaltungs-Backend, Dispositions-Frontend für das Callcenter, Tablet-Frontend für die Fahrer und einer serverbasierenden Telefonanlage für das Callcenter.</p>
+                  <p>Aufgabe des Systems ist die Annahme von Fahrtaufträgen im Callcenter und die automatisiert berechnete Zuweisung an Fahrzeuge. Der Entwicklungsprozess ist ein laufender, vom Kunden kommt der Input aus der Praxis und unser gemeinsames Ziel ist die permanete Verbesserung des Systems. Ein wichtiger Aspekt war die Verwendung von Open Source Software und Daten, soweit irgend möglich, um die laufenden Kosten gering zu halten.</p>
+            <p>Das System läuft im Dual-Server Betrieb, eine möglichst hohe Ausfallssicherheit zu gewährleisten.</p>
+          <p><i>Hinweis: Die native Smartphone-App sowie die Web-App wird von der Firma Syon betreut und nutzt die API der ISTdis Software!</i></p></td></tr>
+                <tr><td>Schwerpunkte:</td><td><ul>
+                  <li>Konzeption, Beratung</li>
+                  <li> Routing, Open Source Software</li>
+                  <li> Programmierung Web-Applikation</li>
+                  <li>Hosting/Serverbetreuung</li>
+            </ul></td></tr>
+                <tr><td>Besonderheiten:</td>
+                <td><ul>
+                  <li>Die Webapplikation präsentiert sich je nach Login (=Userlevel) in komplett unterschiedlichem Gewand und bietet auch unterschiedliche Funktionalitäten (Mandantenfähigkeit).</li>
+                  <li>Die komplette Rechungslegung für Lieferanten und Kunden wird von der Webapplikation erledigt</li>
+                  <li>Umfangreiche Export- und Statistik-Funktionen unterstützen das firmenseitige Controlling</li>
+                </ul>                        </td>
+            </tr>
+                <tr><td>Zeitraum:</td>
+                <td>2014 bis heute</td></tr>
+                <tr><td>Link:</td>
+                <td><a href="https://webapp.istmobil.at/" target="_blank">webapp.istmobil.at</a></td></tr>
+                <tr><td>Kunde:</td>
+                  <td><a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-istmobil.png" class="reflogo"></td></tr>
+              </table>
+            <div class="thumbs"></div>
+            <div class="whiteout"></div>
+            <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+        </div>                    
 
+        <div class="oneproject" filename="ebod" filecount="9">
+          <div class="bigimg"></div>
+            <h2>Österreichische Bodenkarte</h2>
+            <table>
+                <tr><td>Beschreibung:</td>
+                  <td><p>Für das Bundesamt für Wald haben wir in einer fachlich wie technisch sehr fruchtbaren Kooperation die Österreichische Bodenkarte neu gestaltet.</p>
+                    <p>Dabei wurde das alte, stark an ein WebGis angelehnte Produkt durch eine moderne, serverless funktionierende responsive Web-Applikation ersetzt.</p>
+                    <p>Vor allem die Aufbereitung der umfangreichen Daten zur eleganten und performativen Kartendarstellung brachte einige Herausforderungen mit sich, die wir aber zur Zufriedenheit des Kunden meistern konnten.</p>
+                    <p>Eine sehr gute Enduser-Akzeptanz brachte diesem Projekt große Aufmerksamkeit. Die Karte wird aktuell um Fachkarten erweitert.</p></td>
+                  <tr><td>Schwerpunkte:</td><td><ul>
+                    <li>Erstellung einer performativen Karte</li>
+                    <li>Erstellen einer optimalen UI/UX, Spannungsfeld Bedienbarkeit kontra Datenmenge / -vielfalt</li>
+                    <li>Responsive Nutzbarkeit</li>
+                    <li>PDF Export</li>
+              </ul></td></tr>
+              <tr><td>Besonderheiten:</td><td><ul>
+                <li>Aufbereitung von Datenbank-Daten aus über 50 Jahren Erheberarbeit</li>
+                <li>Serverless Web Applikation</li>
+                <li>Tile-Erstellung mit Zoomlevel-reponsiver Detaillierung</li>
+                <li>Import von individuellen Shape Files als Overlay</li>
+              </ul></td></tr>
+              <tr><td>Zeitraum:</td>
+                  <td>2018 bis heute</td></tr>
+                  <tr><td>Link:</td>
+                  <td><a href="https://www.bodenkarte.at/" target="_blank">www.bodenkarte.at</a></td></tr>
+                  <tr><td>Kunde:</td>
+                    <td><a href="https://www.bfw.gv.at/" target="_blank">BFW&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-bfw.png" class="reflogo"></a></td></tr>
+                </table>
+              <div class="thumbs"></div>
+              <div class="whiteout"></div>
+              <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+        </div>
 
-                  <div class="oneproject" filename="haltepunkt" filecount="06">
-                        <div class="bigimg"></div>
-                      <h2>Tool: Haltepunkterfassung</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Gleichsam als Ergänzung zur Expansion der ISTmobil Dispositionsplattform ist dieses Werkzeug zur Erfassung von Haltepunkten (oder allgemeinen &quot;Points of Interesst&quot; entstanden.</p>
-                              <p>Verschiedene Benutzer-Ebenen bieten eine unterschiedliche Palette an Zugriffsmöglichkeiten. Zusätzlich zu den Standard-Werkzeugen zum Anlegen von Punkten (mit Stammdaten) gibt es auch die Möglichkeit, vordefinierte Listen per Excel-Upload in des System zu bringen</p>
-                        <p>Die Kartenansicht kann zwischen 3 verschiedenen Modi umgeschalten werden und bietet die OSM, die Basemap und das Luftbild (OthoMap) als Basismaterial.</p>
-                        <p>Einsatzziel der Online-Applikation ist das verteilte Erfassung geografischer Daten durch Zugangserteilung an div. Stellen wie Gemeinden, Bezirke, Planungsbüros etc.</p></td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li> Programmierung Web-Applikation</li>
-                              <li>Kartenapplikation OpenLayers</li>
-                        </ul></td></tr>
-                            <tr><td>Besonderheiten:</td>
-                            <td><ul>
-                              <li>Unterschiedliche Benutzerebenen (je nach Login) erhalten verschiedene Werkzeuge</li>
-                              <li>Excel-Import Schnittstelle mit Versionsverwaltung</li>
-                              <li>Umschaltbare Karten</li>
-                            </ul>                        </td>
-                        </tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>2016/17</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>ISTmobil GmbH</td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>
+        <div class="oneproject" filename="estrab" filecount="11">
+          <div class="bigimg"></div>
+        <h2>Gemeindestraßen-<br>Zustandserfassung</h2>
+        <table>
+            <tr><td>Beschreibung:</td>
+              <td><p>eStraB – Elektronische Gemeindestraßenzustandserfassung und -bewertung. Für die Straßenbauabteilung (ST4) des Landes Niederösterreich wurde ein webbasiertes Applikations-Paket zur Erfassung und Bewertung des Straßenzustandes durch fußläufige Begehung erstellt.</p>
+                <p>Mit einem Tablet sollen sämtliche relevante Informationen per Touch eingegeben werden, Fotos verortet sowie Anmerkungen eingegeben werden können. Dabei wird ein modularer Ansatz gewählt, d.h. die Kernfunktionalitäten sollen in jedem Fall nur einmal umgesetzt werden und kommen dann in verschiedenen Clients zur Anwendung.</p>
+                <tr><td>Schwerpunkte:</td><td><ul>
+                  <li>Einfache Usability </li>
+                  <li>Karte mit Selektor der Daten-Features (Mobile, Web) </li>
+                  <li>Datenfenster bzw. Feature-Editor zum Bearbeiten der Features wie Nutzungsstreifen etc. (Mobile, Web) </li>
+                  <li>Touchscreen-optimierte Bewertung und Maßnahmensetzung von Nutzungsstreifen </li>
+                  <li>Aktualisierung von GIP-Nutzungsstreifen (Synchronisation) </li>
+                  <li>Überblicksdarstellung der bereits Erhobenen Zustände </li>
+                  <li>Export und Auswertung </li>
+                </ul></td></tr>
+              <tr><td>Besonderheiten:</td>
+              <td><ul>
+                <li>Offline-Modus </li>
+                <li>GIP-Referenzierung </li>
+                <li>Vektorkacheln </li>
+                <li>Import Bestandserhebung </li>
+                <li>Autom. Ausrichtung der Erhebungsrichtung </li>
+                <li>Autom. Übertragen von Festlegungen auf anschließende Kanten</li>
+              </ul></td>
+          </tr>
+              <tr><td>Zeitraum:</td>
+              <td>2018 bis heute</td></tr>
+              <tr><td>Kunde:</td>
+                <td><a href="http://www.noe.gv.at/noe/index.html" target="_blank">Land Niederösterreich</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-landnoe.png" class="reflogo"></td></tr>
+            </table>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+      </div>                    
 
-                  <div class="oneproject" filename="energie" filecount="02">
-                        <div class="bigimg"></div>
-                      <h2>Innovative Energieprojekte 2.0</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Erarbeitung einer Struktur zur systematischen Erfassung, Bewertung und Veröffentlichung von innovativen Energieprojekten.</p>
-								<p>Durch die Verwendung eines Webformulars mit Datenbankanbindung soll die Eingabe von Projekten erleichtert und von unterschiedlichen Personen (intern, extern) ohne proprietärer GIS-Software ermöglicht werden.</p>
-                            </td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li>Konzeption einer Webplattform</li>
-                              <li>automatische Verortung von eingegebenen Projekten</li>
-							  <li>automatische Freigabe bzw. Übergabe an den Onlinestadtplan der Stadt Wien</li>
-                        </ul></td></tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>seit 2016</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>Stadt Wien, Magistratsabteilung 20 Energieplanung</td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>
+        <div class="oneproject" filename="standortnoe" filecount="9" video09="https://www.youtube.com/watch?v=I-ikpHQfxvA">
+              <div class="bigimg"></div>
+            <h2>Plattform standortkompass.at</h2>
+            <table>
+                <tr><td>Beschreibung:</td>
+                  <td><p>Für die Wirschaftsagentur des Landes Niederösterreich haben wir als Teil der w3geo GmbH das Portal www.standortkompass.at für die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das vollresponsive Frontend wird ergänzt durch umfangreiche Administrationswerkzeuge, welche sowohl Kunden wie auch Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.</p>
+                    <p>Für dieses Projekt durften wir 2017 gemeinsam mit dem Kunden den Preis für den 2. Platz in der Sparte "IT" beim Constantinus Award entgegennehmen.</p>
+                    <p>Eine Besonderheit ist die innovative und in dieser Form einzigartige Kartenapplikation, welche synchron mit der Datenbanksuche Standorte visualisiert und zusätzliche Geoinformationen abbildet - das alles mit hoher Performance auch auf mobilen Endgeräten.</p>
+                    <p>Eine zusätzliche herausforderung war die Kopplung an das Intranet CRM, welche über gesicherte Schnittstellen umgesetzt wurde. Das war in der Form nur möglich, weil auch das Hosting der Datenbank und des Geoservers von uns betreut wird.</p></td></tr>
+                  <tr><td>Schwerpunkte:</td><td><ul>
+                    <li>Konzeption, Agile Entwicklung</li>
+                    <li> Programmierung Web-Applikation</li>
+                    <li>Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver / OpenLayers</li>
+                    <li>Hosting/Serverbetreuung</li>
+              </ul></td></tr>
+                  <tr><td>Besonderheiten:</td>
+                  <td><ul>
+                    <li>Die Kartenapplikation ist trotz umfangreicher Datenbestände hochperformant auch auf mobilen Endgeräten</li>
+                    <li>Kopplung zwischen Microsoft CRM und Unix-Applikation via Schnittstellen</li>
+                    <li>Statistik und Controlling-Mechanismen</li>
+                  </ul>                        </td>
+              </tr>
+                  <tr><td>Zeitraum:</td>
+                  <td>2016 bis heute</td></tr>
+                  <tr><td>Link:</td>
+                  <td><a href="http://www.standortkompass.at" target="_blank">www.standortkompass.at</a></td></tr>
+                  <tr><td>Kunde:</td>
+                    <td><a href="https://www.ecoplus.at" target="_blank">ecoplus GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ecoplus.png" class="reflogo"></td></tr>
+                </table>
+              <div class="thumbs"></div>
+              <div class="whiteout"></div>
+              <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          </div>
 
-                    <div class="oneproject" filename="klingbacher" filecount="03">
-                        <div class="bigimg"></div>
-                      <h2>Geodienst-Modul für<br>Risk Assessment Plattform</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Der Kunde nutzte bereits Google Maps als Kartendienst und wollte diesen, nicht zuletzt aufgrund der zu erwartenden hohen Kosten, durch eine flexiblere und günstiger Lösung ersetzen. Schließlich wurde ein Kartenmodul auf Basis von OpenLayers entwickelt.</p>
-								<p>Damit lassen sich Geodienste (Karten, Geocoding, Routing) wie Bing Maps, Here oder OpenStreetMap ohne zusätzlichen Aufwand nutzen können. Damit ist es dem Kunden möglich, zwischen Dienstanbietern zu wechseln, ohne hierfür Änderungen am Source Code vornehmen zu müssen. Weiters können georeferenzierte Daten auf Kundenseite erstellt, modifiziert, gespeichert und dargestellt werden, ohne dass diese auf den Server des Kartendienstes übertragen zu müssen.</p>
-                            </td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li>Beratung</li>
-                              <li>OpenLayers Entwicklung</li>
-                        </ul></td></tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>2016</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>Klingbacher IT Consulting</td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>
+          <div class="oneproject" filename="lac" filecount="6">
+            <div class="bigimg"></div>
+          <h2>lower-austria-contemporary.at</h2>
+          <table>
+              <tr><td>Beschreibung:</td>
+                <td><p>Neugestaltung des Webportals: Das Portal wurde als Single Page Web Applikation konzipiert, d.h. durch die Navigation findet kein Seitenwechsel im traditionellen Sinne statt, die Informationen werden durch Overlays, PopUps etc. verfügbar gemacht.</p>
+                  <p>Dadurch wird garantiert, dass sich kein Nutzer in der Seitenstruktur "verliert".</p>
+                <tr><td>Schwerpunkte:</td><td><ul>
+                  <li>Landkarte von NÖ mit allen relevanten Orten eingezeichnet. (Verortung mittels Koordinaten) und Verlinkung der Institutionen mit deren Websites </li>
+                  <li>Alphabetischer Index der Institutionen und Verlinkung mit deren Websites </li>
+                  <li>Geringer Aufwand beim Editieren der Webseite </li>
+                  <li>Responsive Darstellung</li>
+                </ul></td></tr>
+                <tr><td>Besonderheiten:</td>
+                <td><ul>
+                  <li>Einfache Wartung der Institutionen im Backend </li>
+                  <li>Barrierefreie Version </li>
+                  <li>Kartenzentrierter Aufbau </li>
+                </ul></td>
+            </tr>
+                <tr><td>Zeitraum:</td>
+                <td>2018 bis 2019</td></tr>
+                <tr><td>Link:</td>
+                <td><a href="https://lower-austria-contemporary.at" target="_blank">lower-austria-contemporary.at</a></td></tr>
+                <tr><td>Kunde:</td>
+                  <td><a href="http://www.noe.gv.at/noe/index.html" target="_blank">Abteilung Kunst und Kultur – K1, Land Niederösterreich</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-landnoe.png" class="reflogo"></td></tr>
+              </table>
+            <div class="thumbs"></div>
+            <div class="whiteout"></div>
+            <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+        </div>                    
 
-                  <div class="oneproject" filename="istmobil" filecount="8" video08="https://www.youtube.com/watch?v=bbxIV68FcqI">
-                        <div class="bigimg"></div>
-                      <h2>ISTmobil Dispositionssoftware</h2>
-                      <table>
-                          <tr><td>Beschreibung:</td>
-                            <td><p>Für die Firma ISTmobil GmbH entwickeln und betreuen wir seit 2014 ein automatisiertes Fahrzeugs-Dispositionssystem. Die webbasierte Software ist eine komplexe Verbindung aus Verwaltungs-Backend, Dispositions-Frontend für das Callcenter, Tablet-Frontend für die Fahrer und einer serverbasierenden Telefonanlage für das Callcenter.</p>
-                              <p>Aufgabe des Systems ist die Annahme von Fahrtaufträgen im Callcenter und die automatisiert berechnete Zuweisung an Fahrzeuge. Der Entwicklungsprozess ist ein laufender, vom Kunden kommt der Input aus der Praxis und unser gemeinsames Ziel ist die permanete Verbesserung des Systems. Ein wichtiger Aspekt war die Verwendung von Open Source Software und Daten, soweit irgend möglich, um die laufenden Kosten gering zu halten.</p>
-                        <p>Das System läuft im Dual-Server Betrieb, eine möglichst hohe Ausfallssicherheit zu gewährleisten.</p></td></tr>
-                            <tr><td>Schwerpunkte:</td><td><ul>
-                              <li>Konzeption, Beratung</li>
-                              <li> Routing, Open Source Software</li>
-                              <li> Programmierung Web-Applikation</li>
-                              <li>Hosting/Serverbetreuung</li>
-                        </ul></td></tr>
-                            <tr><td>Besonderheiten:</td>
-                            <td><ul>
-                              <li>Die Webapplikation präsentiert sich je nach Login (=Userlevel) in komplett unterschiedlichem Gewand und bietet auch unterschiedliche Funktionalitäten.</li>
-                              <li>Die komplette Rechungslegung für Lieferanten und Kunden wird von der Webapplikation erledigt</li>
-                              <li>Umfangreiche Export- und Statistik-Funktionen unterstützen das firmenseitige Controlling</li>
-                            </ul>                        </td>
-                        </tr>
-                            <tr><td>Zeitraum:</td>
-                            <td>2014 bis heute</td></tr>
-                            <tr><td>Kunde:</td>
-                            <td>ISTmobil GmbH</td></tr>
-                            <tr><td>Link:</td>
-                            <td><a href="http://www.istmobil.at" target="_blank">www.istmobil.at</a></td></tr>
-                        </table>
-                        <div class="thumbs"></div>
-                        <div class="whiteout"></div>
-                        <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-                    </div>                    
+          <div class="oneproject" filename="haltepunkt" filecount="06">
+                <div class="bigimg"></div>
+              <h2>Tool: Haltepunkterfassung</h2>
+              <table>
+                  <tr><td>Beschreibung:</td>
+                    <td><p>Gleichsam als Ergänzung zur Expansion der ISTmobil Dispositionsplattform ist dieses Werkzeug zur Erfassung von Haltepunkten (oder allgemeinen &quot;Points of Interesst&quot; entstanden.</p>
+                      <p>Verschiedene Benutzer-Ebenen bieten eine unterschiedliche Palette an Zugriffsmöglichkeiten. Zusätzlich zu den Standard-Werkzeugen zum Anlegen von Punkten (mit Stammdaten) gibt es auch die Möglichkeit, vordefinierte Listen per Excel-Upload in des System zu bringen</p>
+                <p>Die Kartenansicht kann zwischen 3 verschiedenen Modi umgeschalten werden und bietet die OSM, die Basemap und das Luftbild (OthoMap) als Basismaterial.</p>
+                <p>Einsatzziel der Online-Applikation ist das verteilte Erfassung geografischer Daten durch Zugangserteilung an div. Stellen wie Gemeinden, Bezirke, Planungsbüros etc.</p></td></tr>
+                    <tr><td>Schwerpunkte:</td><td><ul>
+                      <li> Programmierung Web-Applikation</li>
+                      <li>Kartenapplikation OpenLayers</li>
+                </ul></td></tr>
+                    <tr><td>Besonderheiten:</td>
+                    <td><ul>
+                      <li>Unterschiedliche Benutzerebenen (je nach Login) erhalten verschiedene Werkzeuge</li>
+                      <li>Excel-Import Schnittstelle mit Versionsverwaltung</li>
+                      <li>Umschaltbare Karten</li>
+                    </ul>                        </td>
+                </tr>
+                    <tr><td>Zeitraum:</td>
+                    <td>2016 - heute</td></tr>
+                    <tr><td>Kunde:</td>
+                      <td><a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-istmobil.png" class="reflogo"></td></tr>
+                </table>
+                <div class="thumbs"></div>
+                <div class="whiteout"></div>
+                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            </div>
 
-
-
-    
-
+            <div class="oneproject" filename="klingbacher" filecount="03">
+                <div class="bigimg"></div>
+              <h2>Geodienst-Modul für<br>Risk Assessment Plattform</h2>
+              <table>
+                  <tr><td>Beschreibung:</td>
+                    <td><p>Der Kunde nutzte bereits Google Maps als Kartendienst und wollte diesen, nicht zuletzt aufgrund der zu erwartenden hohen Kosten, durch eine flexiblere und günstiger Lösung ersetzen. Schließlich wurde ein Kartenmodul auf Basis von OpenLayers entwickelt.</p>
+                    <p>Damit lassen sich Geodienste (Karten, Geocoding, Routing) wie Bing Maps, Here oder OpenStreetMap ohne zusätzlichen Aufwand nutzen können. Damit ist es dem Kunden möglich, zwischen Dienstanbietern zu wechseln, ohne hierfür Änderungen am Source Code vornehmen zu müssen. Weiters können georeferenzierte Daten auf Kundenseite erstellt, modifiziert, gespeichert und dargestellt werden, ohne dass diese auf den Server des Kartendienstes übertragen zu müssen.</p>
+                    </td></tr>
+                    <tr><td>Schwerpunkte:</td><td><ul>
+                      <li>Beratung</li>
+                      <li>OpenLayers Entwicklung</li>
+                </ul></td></tr>
+                    <tr><td>Zeitraum:</td>
+                    <td>2016</td></tr>
+                    <tr><td>Kunde:</td>
+                    <td>Klingbacher IT Consulting</td></tr>
+                </table>
+                <div class="thumbs"></div>
+                <div class="whiteout"></div>
+                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            </div>
 				<div style="clear: both;"></div>
 			</div>
             <div class="bubble right">
