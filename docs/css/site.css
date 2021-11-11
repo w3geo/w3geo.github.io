@@ -969,18 +969,20 @@ p {
 
 
 .contactleft {
-	width: calc(100% - 290px);
-	float: left;				
+	width: calc(100% - 500px);
+	display: inline-block;	
+	vertical-align: top;			
 }
 .contactright {
-	width: 240px;
-	height: 70px;
+	width: 200px;
+	height: 110px;
 	margin-left: 20px;
 	background-color: #999;
-	float: left;
-	padding-left: 30px;
-	padding-top: 10px;
+	display: inline-block;
+	padding: 20px;
+	padding-top: 40px;
 	line-height: 30px;
+	vertical-align: top;
 }
 
 .contactright img {
@@ -1034,13 +1036,14 @@ p {
 	background-color: #111;
 }
 .impressum {
-	width: 230px;
+	width: 160px;
+	height: 130px;
 	font-size: 11px;
 	margin-left: 20px;
-	margin-top: 20px;
 	background-color: #eee;
-	float: left;
+	display: inline-block;
 	padding: 20px;
+	vertical-align: top;
 }
 
 .impressum a {
