@@ -50,25 +50,39 @@
         
 			<div class="allprojects">
 
-        <div class="oneproject" filename="ama" filecount="6">
+        <div class="oneproject" filename="waldatlas" filecount="12">
             <div class="bigimg"></div>
-              <h2>AMA (Mobile) Webapplikationen</h2>
+              <h2>Waldatlas</h2>
               <table>
                   <tr><td>Beschreibung:</td>
-                    <td><p>Für Agrarmarkt Austria (AMA) sind wir seit 2019 in den Bereichen Consulting und Unterstützung bei der Softwareentwicklung für moderne kartenbasierte Web-Applikationen tätig.</p>
-                      <p>Diese sollen auf verschiedenen Endgeräten (PCs, Tablets, Smartphones) komfortabel bedienbar sein, und räumliche Sachverhalte auf einfache Art vermitteln.</p></td></tr>
+                    <td><p>Der AG wünschte eine Webplattform inklusive einer Kartenapplikation zur Präsentation einer größeren Anzahl von Kartendaten (später auch statistische Daten) gegenüber einem fachlich interessierten Publikum. Wichtig: Der AG sollte selbst den Bestand an Karten erweitern können, ohne Einbindung des Auftragnehmers. Bevorzugt sollte der Bestand aus Vektor-Karten bestehen, aber auch Rasterkarten. Da es sich um eine größere Anzahl von Karten handelt (30+), musste die Verwaltung komfortabel sein. Die Karten sollten über Deep-Links in IFrames auch auf anderen Websites einbettbar sein.</p>
+                      <p>Komfort-Features wie Import / Export (GeoJSON), Bild-Export (PNG/PDF [inkl. Legende]) und weitere Toolboxfunktionen waren erwünscht. Das Frontend soll auf Responsivität optimiert werden und Anforderungen der Barrierefreiheit (WCAG 2.1) erfüllen.</p></td></tr>
                     <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Konzeption kartographischer Inhalte (Choroplethenkarten) und der Interaktivität dynamischer Karten</li>
-                      <li>Beratung hinsichtlich Stack und Entwicklungsumegebung moderner JavaScript Applikationen</li>
-                      <li>Unterstützung bei der Umsetzung der Software „AMA Flächenauswertung“ mit OpenLayers (Kartendarstellung) und Angular (Web-Framwork)</li>
-                      <li>Umsetzung eines schlanken OpenLayers-Wrappers für die einfache Einbindung von Karten, Geoinformation und räumlichen Editierfunktionen in unternehmensweite mobile AMA-Webapplikationen auf Basis von Ionic/Cordova, Angular und Oracle Apex</li>
-                </ul></td></tr>
+                      <li>Gemeinsame Definition von minimalen / maximalen Features, Priorisierung / Prüfung auf Umsetzbarkeit bzgl. Umsetzungs- / Laufende Kosten (z.B. für Hosting, aber auch Redaktion)</li>
+                      <li>Festlegung von Schemata zur Redaktion der Karten</li>
+                      <li>Entwurf UI / UX unter Berücksichtigung Vorgaben / CI, Entwürfe: Wireframes (Layout), Mockups und Designs zur Abstimmung mit dem Auftraggeber</li>
+                      <li>Web-Development, Auto-Deployment</li>
+                      <li>Implementierung eines Staging-Prozesses zum Qualitätsmanagement.</li>
+                      <li>Einrichtung eines Verwaltungs-Backends (STRAPI) und API-Development (Erweiterung der Standard-APIs von STRAPI)</li>
+                      <li>Automatisierungs-Scripts für Kartendaten</li>
+                    </ul></td></tr>
+
+                    <tr><td>Besonderheiten:</td>
+                      <td>
+<p>Die Besonderheit bei diesem Projekt ist, dass ALLE Karten im Portal komplett vom Auftraggeber erstellt und freigeschalten werden können, inklusive Layer, Feature-PopUps usw. Dazu sollte es zu jeder Karte bzw. auch für den allgemeinen Informationsteil ein möglichst einfaches CMS geben, dass automatisch responsiv ist, da ein hoher mobiler Nutzungsanteil erwartet wurde.</p>
+<p>Vektorkarten werden durch Hochladen eines GeoJSONs ins Portal automatisch in Vektor-Tiles umgewandelt und auf einem Server bereitgestellt. Andere Kartentypen (Rasterdaten) werden manuell mittels eines in einem Workshop erläuterten und gut dokumentierten Prozesses erzeugt und auf den Server transferiert.</p>
+<p>Mittels Mapbox Style Files können nun ein oder mehrere dieser Tile-Layer zu einer Karte zusammengeführt werden, im Style File werden alle notwendigen Angaben gemacht. Solche Style Files können mit externen Tools oder auch manuell erzeugt werden, auch das wird in einem Workshop erarbeitet.</p>
+
+                      </td>
+                    </tr>
+
+
                     <tr><td>Zeitraum:</td>
-                    <td>2019 bis heute</td></tr>
+                    <td>2023 – 2025 (laufende Erweiterung, Betreuung)</td></tr>
                     <tr><td>Link:</td>
-                    <td><a href="https://flaechenauswertung.services.ama.at/" target="_blank">flaechenauswertung.services.ama.at</a></td></tr>
+                    <td><a href="https://waldatlas.at/" target="_blank">www.waldatlas.at/</a></td></tr>
                     <tr><td>Kunde:</td>
-                      <td><a href="https://www.ama.at/" target="_blank">AMA</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ama.png" class="reflogo"></td></tr>
+                      <td><a href="https://www.bmluk.gv.at/" target="_blank">Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BML)</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/BMLUK_Logo_srgb.svg" class="reflogo"></td></tr>
                   </table>
                 <div class="thumbs"></div>
                 <div class="whiteout"></div>
