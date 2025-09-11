@@ -50,7 +50,60 @@
         
 			<div class="allprojects">
 
-          <div class="oneproject" filename="ama" filecount="6">
+
+          <div class="oneproject" filename="waldinventur" filecount="11">
+            <div class="bigimg"></div>
+              <h2>Österreichische Waldinventur</h2>
+              <table>
+                  <tr><td>Beschreibung:</td>
+                    <td><p>Wie alle Länder der EU ist auch Österreich zu einer Waldinventur verpflichtet. Damit beauftragt ist das Bundesforschungs- und Ausbildungszentrum für Wald, Naturgefahren und Landschaft (BFW). Die dazugehörigen Daten werden seit 2000 in einem einheitlichen Schema erhoben und in einer BFW-internen Datenbank gespeichert und verarbeitet.</p>
+                        <p>Ein zu schaffendes Portal sollte diese Daten in unterschiedlichen Sichten zugänglich machen, zum einen über Choroplethenkarten, zum anderen als Datendownloads in Tabellenform. Zusätzlich sollten die vom BFW aus den Daten laufend aktualisierten Wald- und Baumartenkarte als Rasterkarte darstellbar sein. Design-Vorgabe war „Desktop First“ - dennoch musste aber eine einwandfreie Benutzbarkeit auch auf mobilen Endgeräten gegeben sein (responsive Design)</p>
+                        <p>Aktualisierungen sollte der Auftraggeber zukünftig selbst durchführen können, das BFW hatte die Vorgabe, die Website selbst zu hosten, ohne aber dadurch großen Aufwand für Sicherheitsfeatures zu haben.</p>
+            		    </td>
+                    <tr><td>Schwerpunkte:</td>
+                    <td><ul>
+                          <li>Grundlagenrecherche (Datenmodell) & Gemeinsame Erarbeitung eines Standards für standardisierte Datenanlieferungen.</li>
+                          <li>Ermittlung notwendiger Preprocessing-Schritte</li>
+                          <li>UX / UI - Entwurf (Wireframes), Responsive Design- Endgültiges Design / Mockups durch Einbindung einer externen Grafikerin. Berücksichtigung des CI-Designs des BFW.</li>
+                          <li>Preprocessing Skripts mit integrierter Fehlerkontrolle</li>
+                          <li>Implementierung eines Staging-Prozesses zum Qualitätsmanagement</li>
+                          <li>Web-Development / Auto-Deployment</li>
+                          </ul>
+            		    </td></tr>
+
+                <tr><td>Besonderheiten:</td>
+                <td>
+                  <ul>
+                      <li>Die Website ist serverless, d.h. es gibt keine Datenbankkomponente / Schnittstellen und damit auch keine zu berücksichtigende Sicherheitsaspekte.</li>
+                      <li>Um Fehler bei Updates zu vermeiden, wurde in die Pre-Processing-Scripts umfangreiche Fehler-Kontrollmechanismen integriert.</li>
+                  </ul>
+            		</td>
+	            </tr>
+
+
+                    <tr><td>Zeitraum:</td>
+                    <td>
+              		    2021 - 2023 (Betreuung fortlaufend)
+                    </td></tr>
+                    
+                    <tr><td>Link:</td>
+                    <td>
+                      <a href="https://waldinventur.at/" target="_blank">www.waldinventur.at</a>
+		                </td></tr>
+
+                    <tr><td>Kunde:</td>
+                      <td>
+                        <a target="_blank" href="https://www.bfw.gv.at/"></href>Bundesforschungszentrum für Wald (BFW)</a>&nbsp;&nbsp;&nbsp;&nbsp;<img class="reflogo" src="referenzen/bfw-logo-color.svg"></td>
+                    </tr>
+                  </table>
+                <div class="thumbs"></div>
+                <div class="whiteout"></div>
+                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          </div>
+
+
+
+        <div class="oneproject" filename="ama" filecount="6">
             <div class="bigimg"></div>
               <h2>AMA (Mobile) Webapplikationen</h2>
               <table>
