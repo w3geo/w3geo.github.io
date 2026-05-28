@@ -89,7 +89,7 @@ function initall() {
   });
   $(".headernavi").animate({ top: "0px" }, 300);
   $(".curtain").animate({ bottom: "-100%" }, 500, function () {
-    $(".headersection").css("height", "100px");
+    $(".headersection").css("height", "130px");
   });
 }
 
@@ -114,13 +114,14 @@ function exitpage(ev, href, forceret) {
 
 // RESPONSIVE MENU
 function revealmenu() {
+  return;
   if ($(".navigator").css("display") == "none") {
     $(".headersection").css("height", "280px");
     $(".navigator").css("display", "block");
     $(".navigator").animate({ height: "170px" }, 300);
   } else {
     $(".navigator").animate({ height: "1px" }, 300, function () {
-      $(".headersection").css("height", "140px");
+      $(".headersection").css("height", "100px");
       $(".navigator").css("display", "none");
     });
   }
