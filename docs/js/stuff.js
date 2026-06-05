@@ -114,7 +114,6 @@ function exitpage(ev, href, forceret) {
 
 // RESPONSIVE MENU
 function revealmenu() {
-  return;
   if ($(".navigator").css("display") == "none") {
     $(".headersection").css("height", "280px");
     $(".navigator").css("display", "block");
