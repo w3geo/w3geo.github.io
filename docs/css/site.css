@@ -116,14 +116,14 @@ p {
   width: 100%;
   height: 100px;
   background-color: #fff;
-  border-bottom: 10px solid #aaa;
+  border-bottom: 30px solid #ccc;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .navigator {
   position: absolute;
   width: 1020px;
-  left: calc(50% - 510px);
-  text-align: center;
+  right: 0px;
+  text-align: right;
   bottom: 5px;
   display: block;
 }
@@ -157,14 +157,23 @@ p {
 .navigator a {
   display: inline-block;
   position: relative;
-  margin-right: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
   color: #999;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: normal;
   text-transform: uppercase;
+  transition:
+    color 0.5s,
+    font-size 0.5s,
+    padding-left 0.5s,
+    padding-right 0.5s;
 }
 .navigator a:hover {
+  font-size: 28px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #666;
 }
 .navigator a div {
@@ -172,18 +181,18 @@ p {
 }
 
 .navigator a.active {
+  font-size: 28px;
   color: #000;
   cursor: default;
 }
 .navigator a.active div {
+  background-color: #fff;
   display: block;
   position: absolute;
-  left: calc(50% - 15px);
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #fff;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  margin-top: 8px;
 }
 
 .headernavi img {
