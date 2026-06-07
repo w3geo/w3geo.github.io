@@ -16,8 +16,9 @@ td,
 input,
 textarea {
   font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   color: #333;
+  line-height: 22px;
 }
 body {
   background: rgb(0, 0, 0);
@@ -42,9 +43,15 @@ h2 {
   color: #666;
   font-size: 18px;
 }
+
 p {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+a {
+  color: #666;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1400px) {
@@ -264,61 +271,25 @@ p {
 
 .content {
   position: relative;
-  width: 1020px;
+  width: calc(100vw - 200px);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 70px;
   z-index: 5;
 }
 
 .bubble {
   position: relative;
-  width: calc(100% - 70px);
+  width: calc(100% - 80px);
   background-color: #fff;
-  border: 2px solid #666;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin-top: 40px;
-  margin-left: 2px;
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 .bottom80 {
   margin-bottom: 80px;
-}
-
-.bubble:before {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 100%;
-  border-left: 36px solid transparent;
-  border-right: 36px solid transparent;
-  border-top: 30px solid #666;
-}
-.bubble.left:before {
-  left: 30px;
-}
-.bubble.right:before {
-  right: 30px;
-}
-.bubble:after {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 100%;
-  border-left: 26px solid transparent;
-  border-right: 26px solid transparent;
-  border-top: 26px solid #fff;
-}
-.bubble.left:after {
-  left: 40px;
-}
-.bubble.right:after {
-  right: 40px;
 }
 
 @media screen and (max-width: 1020px) {
