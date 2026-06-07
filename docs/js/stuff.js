@@ -115,7 +115,7 @@ function exitpage(ev, href, forceret) {
 function revealmenu() {
   if ($(".navigator").css("display") == "none") {
     $(".navigator").css("display", "block");
-    $(".navigator").animate({ height: "170px" }, 300);
+    $(".navigator").animate({ height: "240px" }, 300);
   } else {
     $(".navigator").animate({ height: "1px" }, 300, function () {
       $(".navigator").css("display", "none");

@@ -125,11 +125,12 @@ p {
   text-align: right;
   bottom: 5px;
   display: block;
+  padding-top: 0px;
 }
 .revealer {
   position: absolute;
   right: 0px;
-  top: 28px;
+  top: 58px;
   display: none;
   text-align: right;
 }
@@ -142,11 +143,11 @@ p {
 
 .revealer div {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
   text-decoration: none;
   color: #666;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
 }
 .revealer div:hover {
@@ -207,43 +208,18 @@ p {
   height: 50px;
 }
 
-@media screen and (max-width: 1400px) {
-  .navigator a {
-    margin-right: 35px;
-  }
-  .headernavi img {
-    height: 40px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .navigator {
-    left: auto;
-    right: calc(50% - 510px);
-    text-align: right;
-  }
-}
-@media screen and (max-width: 1020px) {
-  .navigator {
-    right: 0px;
-    text-align: right;
-  }
-  .navigator a {
-    margin-right: 25px;
-    font-size: 16px;
-  }
-  .headernavi img {
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1100px) {
   .revealer {
     display: block;
   }
   .navigator {
+    padding-top: 20px;
+    position: fixed;
+    z-index: 101;
     left: 0px;
     width: 100%;
-    top: 80px;
+    top: 130px;
+    height: 100%;
     background-color: #fff;
     box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.5);
     height: 1px;
@@ -251,6 +227,7 @@ p {
     display: none;
   }
   .navigator a {
+    text-align: left;
     display: block;
     margin: 10px;
     margin-left: 20px;
