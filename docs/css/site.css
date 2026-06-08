@@ -36,12 +36,16 @@ div {
 }
 h1 {
   margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 24px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #999;
+  font-weight: normal;
 }
 h2 {
-  color: #666;
-  font-size: 18px;
+  color: #888;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
 
 p {
@@ -205,7 +209,7 @@ a {
   left: 0px;
   width: 100%;
   height: 2px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .headernavi img {
@@ -338,7 +342,7 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
-  .lleft {
+  .left {
     width: 100%;
   }
   .limage {
@@ -465,16 +469,16 @@ a {
 }
 
 .eineleistung h2 {
-  font-size: 18px;
+  font-size: 22px;
+  margin-bottom: 15px;
+
   font-weight: bold;
-  color: #666;
+  color: #888;
   margin-top: 20px;
   text-align: center;
+  font-weight: normal;
 }
 
-.eineleistung p {
-  font-size: 13px;
-}
 .leistungsschnitt {
   clear: both;
   margin-bottom: 25px;
@@ -705,6 +709,7 @@ a {
   margin: 0px;
   margin-left: 7px;
   margin-top: 4px;
+  margin-bottom: 10px;
 }
 .oneproject a {
   text-decoration: none;
