@@ -202,7 +202,7 @@ function onehandler(ob, mode, ev) {
     var pname = $(ob).attr("filename");
     curob = ob;
     scrtsave = $(window).scrollTop();
-    $(window).scrollTo(ob, 300, { offset: -100 });
+    $(window).scrollTo(ob, 300, { offset: -150 });
   }
   if (mode == 1) {
     var pname = $(ob).attr("filename");
