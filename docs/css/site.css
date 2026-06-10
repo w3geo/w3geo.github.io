@@ -613,6 +613,29 @@ a {
   cursor: default;
 }
 
+.oneproject div {
+  font-size: 14px;
+}
+
+.oneproject div.label {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  display: none;
+}
+
+.oneproject div.text {
+  max-width: calc(100% - 120px);
+}
+
+.oneproject.active div.text {
+  max-width: 100%;
+}
+
+.oneproject.active div.label {
+  display: block;
+}
+
 .reflogo {
   display: inline-block;
   height: 80px;
@@ -676,33 +699,9 @@ a {
   margin: 2px;
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.7);
 }
-.oneproject table {
-  width: calc(50vw - 120px);
-  max-width: 200px;
-  overflow: hidden;
-}
-.oneproject.active table {
-  width: calc(100% - 10px);
-}
-.oneproject tr td:nth-child(1) {
-  font-weight: bold;
-  width: 120px;
-  display: none;
-}
-.oneproject.active tr td:nth-child(1) {
-  display: block;
-}
-.oneproject td {
-  vertical-align: top;
-  font-size: 13px;
-  padding: 7px;
-}
-.oneproject td p {
-  margin-top: 0px;
-}
+
 .oneproject h2 {
   margin: 0px;
-  margin-left: 7px;
   margin-top: 4px;
   margin-bottom: 10px;
 }
