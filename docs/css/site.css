@@ -296,8 +296,30 @@ a {
   margin-right: auto;
 }
 
+.bubble.half {
+  margin: 10px;
+  display: inline-block;
+  width: calc(25% - 104px);
+}
+
+.bubble.half div {
+  font-size: 14px;
+}
+
+.bubble.half img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
 .bottom80 {
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1400px) {
+  .bubble.half {
+    width: calc(50% - 102px);
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -351,6 +373,13 @@ a {
     width: 70px;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .bubble.half {
+    width: calc(100% - 80px);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .lleft {
     width: 100%;
@@ -517,58 +546,6 @@ a {
 
   .eineleistungsmall {
     width: calc(50% - 40px);
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .eineleistung {
-    height: 180px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-}
-
-/* Team --------------------------------------------------- */
-/* --------------------------------------------------------------- */
-.teamimage.full {
-  width: 100%;
-  height: auto;
-}
-.teamimage.half {
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
-  max-width: 200px;
-  height: auto;
-}
-
-.teamaside {
-  vertical-align: top;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.teamhorizontal span {
-  display: inline-block;
-  width: 33%;
-  text-align: center;
-  vertical-align: top;
-}
-
-@media screen and (max-width: 900px) {
-  .teamhorizontal span {
-    display: block;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 660px) {
-  .teamaside {
-    display: block;
-    margin-left: 0px;
-    margin-top: 10px;
   }
 }
 
