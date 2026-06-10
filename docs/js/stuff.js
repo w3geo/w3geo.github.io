@@ -87,10 +87,14 @@ function initall() {
       $(this).attr("href", "");
     }
   });
-  $(".headernavi").animate({ top: "0px" }, 300);
-  $(".curtain").animate({ bottom: "-100%" }, 500, function () {
-    $(".headersection").css("height", "100px");
-  });
+  //  $(".headernavi").animate({ top: "0px" }, 300);
+  $(".curtain").animate(
+    { opacity: 0, backgroundSize: "30vh" },
+    400,
+    function () {
+      $(".curtain").css("display", "none");
+    },
+  );
 }
 
 function exitpage(ev, href, forceret) {
@@ -104,23 +108,16 @@ function exitpage(ev, href, forceret) {
   ) {
     $(".navigator").animate({ height: "1px" }, 100);
   }
-
-  $(".headersection").css("height", "100%");
-  $(".headernavi").animate({ top: "-90px" }, 400);
-  $(".curtain").animate({ bottom: "0px" }, 500, function () {
-    document.location = href;
-  });
+  document.location = href;
 }
 
 // RESPONSIVE MENU
 function revealmenu() {
   if ($(".navigator").css("display") == "none") {
-    $(".headersection").css("height", "280px");
     $(".navigator").css("display", "block");
-    $(".navigator").animate({ height: "170px" }, 300);
+    $(".navigator").animate({ height: "240px" }, 300);
   } else {
     $(".navigator").animate({ height: "1px" }, 300, function () {
-      $(".headersection").css("height", "140px");
       $(".navigator").css("display", "none");
     });
   }
@@ -205,7 +202,7 @@ function onehandler(ob, mode, ev) {
     var pname = $(ob).attr("filename");
     curob = ob;
     scrtsave = $(window).scrollTop();
-    $(window).scrollTo(ob, 300, { offset: -100 });
+    $(window).scrollTo(ob, 300, { offset: -150 });
   }
   if (mode == 1) {
     var pname = $(ob).attr("filename");

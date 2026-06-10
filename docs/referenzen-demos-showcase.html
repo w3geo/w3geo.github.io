@@ -1,860 +1,1904 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-        <title>w3geo GmbH - Ausgewählte Projekte und Referenzen</title>
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/fonts.css" rel="stylesheet">
-        <link href="css/site.css" rel="stylesheet">
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-		<script src="js/stuff.js"></script>
-    </head>
-    <body>
-		<div class="headersection">
-            <div class="curtain"></div>
-            <div class="headernavi">
-				<div class="revealer">
-					<div onClick="revealmenu()">Menü<i class="fa fa-bars"></i></div>
-                </div>
-                <img src="bilder/w3geo-logo.png">
-				<div class="navigator">
-					<a href="index.html">Startseite<div></div></a>
-					<a href="produkte-und-leistungen.html">Produkte / Leistungen<div></div></a>
-					<a href="referenzen-demos-showcase.html" class="active">Referenzen<div></div></a>
-					<a href="das-team-und-partner.html">Team<div></div></a>
-					<a href="kontakt-impressum.html">Kontakt<div></div></a>
-                </div>
-            </div>
-		</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width" />
+    <title>w3geo GmbH - Ausgewählte Projekte und Referenzen</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/stuff.js"></script>
+  </head>
+  <body>
+    <div class="headersection">
+      <div class="curtain"></div>
+      <div class="headernavi">
+        <div class="revealer">
+          <div onClick="revealmenu()"><i class="fa fa-bars"></i></div>
+        </div>
+        <img src="bilder/w3geo-logo.png" />
+        <div class="navigator">
+          <a href="index.html"
+            >Startseite
+            <div></div
+          ></a>
+          <a href="produkte-und-leistungen.html"
+            >Leistungen
+            <div></div
+          ></a>
+          <a href="referenzen-demos-showcase.html" class="active"
+            >Referenzen
+            <div></div
+          ></a>
+          <a href="das-team-und-partner.html"
+            >Team
+            <div></div
+          ></a>
+          <a href="kontakt-impressum.html"
+            >Kontakt
+            <div></div
+          ></a>
+        </div>
+      </div>
+    </div>
 
     <div class="imageviewer">
       <div class="backblur" onClick="zoom(this,-2,event)"></div>
       <div class="currentimage">
-        <img src="">
+        <img src="" />
         <div class="imgswitch close" onClick="zoom(this,-2,event)"></div>
         <div class="imgswitch prev" onClick="zoom(this,-1)"></div>
         <div class="imgswitch next" onClick="zoom(this,1)"></div>
       </div>
     </div>
 
-  
-		<div class="content toppad70">
-        	<div class="bubble left">
-                <h1>Einige Projekte und Referenzen</h1>
-                <p>Auf dieser Seite präsentieren wir ausgewähte Projekte, welche die w3geo GmbH als Hauptauftragnehmer oder Teile unseres Teams als eigenständige Unternehmen umgesetzt haben.</p>
-                <p class="description">Hinweis: Da einige unserer Projekte (zumindest Teile davon) nicht für den öffentlichen Zugang konzipiert sind, haben wir bestimmte Bereiche der Screenshots aus Datenschutzgründen teilweise unkenntlich machen müssen. Bitte haben Sie dafür Verständnis!</p>
-			</div>
-        
-			<div class="allprojects">
+    <div class="content toppad">
+      <div class="bubble left">
+        <h1>Einige Projekte und Referenzen</h1>
+        <p>
+          Auf dieser Seite präsentieren wir ausgewähte Projekte, welche die
+          w3geo GmbH als Hauptauftragnehmer oder Teile unseres Teams als
+          eigenständige Unternehmen umgesetzt haben.
+        </p>
+        <p class="description">
+          Hinweis: Da einige unserer Projekte (zumindest Teile davon) nicht für
+          den öffentlichen Zugang konzipiert sind, haben wir bestimmte Bereiche
+          der Screenshots aus Datenschutzgründen teilweise unkenntlich machen
+          müssen. Bitte haben Sie dafür Verständnis!
+        </p>
+      </div>
 
-        <div class="oneproject" filename="waldatlas" filecount="13" video13="https://www.youtube.com/shorts/Z4Qvr9cekeg">
-            <div class="bigimg"></div>
-              <h2>Waldatlas</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Der AG wünschte eine Webplattform inklusive einer Kartenapplikation zur Präsentation einer größeren Anzahl von Kartendaten (später auch statistische Daten) gegenüber einem fachlich interessierten Publikum. Wichtig: Der AG sollte selbst den Bestand an Karten erweitern können, ohne Einbindung des Auftragnehmers. Bevorzugt sollte der Bestand aus Vektor-Karten bestehen, aber auch Rasterkarten. Da es sich um eine größere Anzahl von Karten handelt (30+), musste die Verwaltung komfortabel sein. Die Karten sollten über Deep-Links in IFrames auch auf anderen Websites einbettbar sein.</p>
-                      <p>Komfort-Features wie Import / Export (GeoJSON), Bild-Export (PNG/PDF [inkl. Legende]) und weitere Toolboxfunktionen waren erwünscht. Das Frontend soll auf Responsivität optimiert werden und Anforderungen der Barrierefreiheit (WCAG 2.1) erfüllen.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Gemeinsame Definition von minimalen / maximalen Features, Priorisierung / Prüfung auf Umsetzbarkeit bzgl. Umsetzungs- / Laufende Kosten (z.B. für Hosting, aber auch Redaktion)</li>
-                      <li>Festlegung von Schemata zur Redaktion der Karten</li>
-                      <li>Entwurf UI / UX unter Berücksichtigung Vorgaben / CI, Entwürfe: Wireframes (Layout), Mockups und Designs zur Abstimmung mit dem Auftraggeber</li>
-                      <li>Web-Development, Auto-Deployment</li>
-                      <li>Implementierung eines Staging-Prozesses zum Qualitätsmanagement.</li>
-                      <li>Einrichtung eines Verwaltungs-Backends (STRAPI) und API-Development (Erweiterung der Standard-APIs von STRAPI)</li>
-                      <li>Automatisierungs-Scripts für Kartendaten</li>
-                    </ul></td></tr>
+      <div class="allprojects">
+        <div
+          class="oneproject"
+          filename="waldatlas"
+          filecount="13"
+          video13="https://www.youtube.com/shorts/Z4Qvr9cekeg">
+          <div class="bigimg"></div>
+          <h2>Waldatlas</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Der AG wünschte eine Webplattform inklusive einer
+                Kartenapplikation zur Präsentation einer größeren Anzahl von
+                Kartendaten (später auch statistische Daten) gegenüber einem
+                fachlich interessierten Publikum. Wichtig: Der AG sollte selbst
+                den Bestand an Karten erweitern können, ohne Einbindung des
+                Auftragnehmers. Bevorzugt sollte der Bestand aus Vektor-Karten
+                bestehen, aber auch Rasterkarten. Da es sich um eine größere
+                Anzahl von Karten handelt (30+), musste die Verwaltung
+                komfortabel sein. Die Karten sollten über Deep-Links in IFrames
+                auch auf anderen Websites einbettbar sein.
+              </p>
+              <p>
+                Komfort-Features wie Import / Export (GeoJSON), Bild-Export
+                (PNG/PDF [inkl. Legende]) und weitere Toolboxfunktionen waren
+                erwünscht. Das Frontend soll auf Responsivität optimiert werden
+                und Anforderungen der Barrierefreiheit (WCAG 2.1) erfüllen.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Gemeinsame Definition von minimalen / maximalen Features,
+                  Priorisierung / Prüfung auf Umsetzbarkeit bzgl. Umsetzungs- /
+                  Laufende Kosten (z.B. für Hosting, aber auch Redaktion)
+                </li>
+                <li>Festlegung von Schemata zur Redaktion der Karten</li>
+                <li>
+                  Entwurf UI / UX unter Berücksichtigung Vorgaben / CI,
+                  Entwürfe: Wireframes (Layout), Mockups und Designs zur
+                  Abstimmung mit dem Auftraggeber
+                </li>
+                <li>Web-Development, Auto-Deployment</li>
+                <li>
+                  Implementierung eines Staging-Prozesses zum
+                  Qualitätsmanagement.
+                </li>
+                <li>
+                  Einrichtung eines Verwaltungs-Backends (STRAPI) und
+                  API-Development (Erweiterung der Standard-APIs von STRAPI)
+                </li>
+                <li>Automatisierungs-Scripts für Kartendaten</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>Die Besonderheit bei diesem Projekt ist, dass ALLE Karten im Portal komplett vom Auftraggeber erstellt und freigeschalten werden können, inklusive Layer, Feature-PopUps usw. Dazu sollte es zu jeder Karte bzw. auch für den allgemeinen Informationsteil ein möglichst einfaches CMS geben, dass automatisch responsiv ist, da ein hoher mobiler Nutzungsanteil erwartet wurde.</p>
-                        <p>Vektorkarten werden durch Hochladen eines GeoJSONs ins Portal automatisch in Vektor-Tiles umgewandelt und auf einem Server bereitgestellt. Andere Kartentypen (Rasterdaten) werden manuell mittels eines in einem Workshop erläuterten und gut dokumentierten Prozesses erzeugt und auf den Server transferiert.</p>
-                        <p>Mittels Mapbox Style Files können nun ein oder mehrere dieser Tile-Layer zu einer Karte zusammengeführt werden, im Style File werden alle notwendigen Angaben gemacht. Solche Style Files können mit externen Tools oder auch manuell erzeugt werden, auch das wird in einem Workshop erarbeitet.</p>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                Die Besonderheit bei diesem Projekt ist, dass ALLE Karten im
+                Portal komplett vom Auftraggeber erstellt und freigeschalten
+                werden können, inklusive Layer, Feature-PopUps usw. Dazu sollte
+                es zu jeder Karte bzw. auch für den allgemeinen Informationsteil
+                ein möglichst einfaches CMS geben, dass automatisch responsiv
+                ist, da ein hoher mobiler Nutzungsanteil erwartet wurde.
+              </p>
+              <p>
+                Vektorkarten werden durch Hochladen eines GeoJSONs ins Portal
+                automatisch in Vektor-Tiles umgewandelt und auf einem Server
+                bereitgestellt. Andere Kartentypen (Rasterdaten) werden manuell
+                mittels eines in einem Workshop erläuterten und gut
+                dokumentierten Prozesses erzeugt und auf den Server
+                transferiert.
+              </p>
+              <p>
+                Mittels Mapbox Style Files können nun ein oder mehrere dieser
+                Tile-Layer zu einer Karte zusammengeführt werden, im Style File
+                werden alle notwendigen Angaben gemacht. Solche Style Files
+                können mit externen Tools oder auch manuell erzeugt werden, auch
+                das wird in einem Workshop erarbeitet.
+              </p>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2023 – 2025 (laufende Erweiterung, Betreuung)</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://waldatlas.at/" target="_blank">www.waldatlas.at/</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bmluk.gv.at/" target="_blank">Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BML)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/BMLUK_Logo_srgb.svg" width="300px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">
+              2023 – 2025 (laufende Erweiterung, Betreuung)
+            </div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://waldatlas.at/" target="_blank"
+                >www.waldatlas.at/</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bmluk.gv.at/" target="_blank"
+                >Bundesministerium für Land- und Forstwirtschaft, Klima- und
+                Umweltschutz, Regionen und Wasserwirtschaft (BML)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/BMLUK_Logo_srgb.svg" width="300px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="fast" filecount="8">
-            <div class="bigimg"></div>
-              <h2>Integrierte<br>Nährstoffbilanz</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Die integrierte Nährstoffbilanz (INB) ist die österreichische Implementierung des Nachhaltigkeitsinstruments im Rahmen der FaST-Initiative der EU, welches laut GAP-Strategieplan jeder Mitgliedsstaat verpflichtend für Landwirte kostenlos zur Verfügung stellen muss.</p>
-                      <p>Die INB stellt Nährstoffverhältnisse auf Schlagebene dar und soll Empfehlungen für den Einsatz von Düngemitteln geben, wodurch eine vorausschauende Planung der eingesetzten Mittel unterstützt wird. Die dargestellten Kartenlayer sind anonymisiert und dienen ausschließlich zur Planung.</p>
-                    <p>Um Landwirte bei der Düngeplanung optimal zu unterstützen, wurde eng mit der Landwirtschaftskammer Oberösterreich zusammengearbeitet, die auf diesem Gebiet schon seit Jahren führend in Österreich ist, und dafür Excel-basierte Tools entwickelt hat. Know-how und Logik aus diesen Tools wurde gemeinsam in eine Web-Applikation übertragen, die mit einer Schritt-für-Schritt Eingabe mit dynamischer Ausgabe der Ergebnisse die an sich komplexe Thematik so niederschwellig wie möglich umsetzt.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Systematisierung der komplexen Berechnungsformeln für die Nährstoffbilanz in Zusammenarbeit mit dem Auftraggeber</li>
-                      <li>Verwendung der INVEKOS Schläge und deren übersichtliche Darstellung auf einer Karte mit Ortssuche, damit der Landwirt sofort seine Flächen findet</li>
-                      <li>Niederschwellige, intuitive Umsetzung komplexer Workflows und Formulare</li>
-                      <li>Web-Entwicklung unter Verwendung von Open-Source-Komponenten</li>
-                      <li>Einfache, verständliche Auswertung der Ergebnisse</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Integrierte<br />Nährstoffbilanz</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Die integrierte Nährstoffbilanz (INB) ist die österreichische
+                Implementierung des Nachhaltigkeitsinstruments im Rahmen der
+                FaST-Initiative der EU, welches laut GAP-Strategieplan jeder
+                Mitgliedsstaat verpflichtend für Landwirte kostenlos zur
+                Verfügung stellen muss.
+              </p>
+              <p>
+                Die INB stellt Nährstoffverhältnisse auf Schlagebene dar und
+                soll Empfehlungen für den Einsatz von Düngemitteln geben,
+                wodurch eine vorausschauende Planung der eingesetzten Mittel
+                unterstützt wird. Die dargestellten Kartenlayer sind
+                anonymisiert und dienen ausschließlich zur Planung.
+              </p>
+              <p>
+                Um Landwirte bei der Düngeplanung optimal zu unterstützen, wurde
+                eng mit der Landwirtschaftskammer Oberösterreich
+                zusammengearbeitet, die auf diesem Gebiet schon seit Jahren
+                führend in Österreich ist, und dafür Excel-basierte Tools
+                entwickelt hat. Know-how und Logik aus diesen Tools wurde
+                gemeinsam in eine Web-Applikation übertragen, die mit einer
+                Schritt-für-Schritt Eingabe mit dynamischer Ausgabe der
+                Ergebnisse die an sich komplexe Thematik so niederschwellig wie
+                möglich umsetzt.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Systematisierung der komplexen Berechnungsformeln für die
+                  Nährstoffbilanz in Zusammenarbeit mit dem Auftraggeber
+                </li>
+                <li>
+                  Verwendung der INVEKOS Schläge und deren übersichtliche
+                  Darstellung auf einer Karte mit Ortssuche, damit der Landwirt
+                  sofort seine Flächen findet
+                </li>
+                <li>
+                  Niederschwellige, intuitive Umsetzung komplexer Workflows und
+                  Formulare
+                </li>
+                <li>
+                  Web-Entwicklung unter Verwendung von Open-Source-Komponenten
+                </li>
+                <li>Einfache, verständliche Auswertung der Ergebnisse</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                          <li>"Local First": die Web-Applikation speichert alle von Nutzern angegebenen Daten ausschließlich auf deren Rechner, die Datenhoheit liegt also zu 100% beim Benutzer.</li>
-                          <li>Nutzung von Synergien: als Datengrundlage für die Kartennavigation dienen die gleichen Vektorkacheln, die für das Projekt "Inspire Agraratlas" generiert wurden</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  "Local First": die Web-Applikation speichert alle von Nutzern
+                  angegebenen Daten ausschließlich auf deren Rechner, die
+                  Datenhoheit liegt also zu 100% beim Benutzer.
+                </li>
+                <li>
+                  Nutzung von Synergien: als Datengrundlage für die
+                  Kartennavigation dienen die gleichen Vektorkacheln, die für
+                  das Projekt "Inspire Agraratlas" generiert wurden
+                </li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2023 - 2025</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bmluk.gv.at/" target="_blank">Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BML)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/BMLUK_Logo_srgb.svg" width="300px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2023 - 2025</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bmluk.gv.at/" target="_blank"
+                >Bundesministerium für Land- und Forstwirtschaft, Klima- und
+                Umweltschutz, Regionen und Wasserwirtschaft (BML)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/BMLUK_Logo_srgb.svg" width="300px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="mrtis" filecount="6">
-            <div class="bigimg"></div>
-              <h2>MRTIS</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Das Mississippi River Traffic Information Service (MRTIS), ist ein hochmodernes System zur Bereitstellung von Schifffahrtsinformationen und zur Schiffsverfolgung, das speziell für den Mississippi entwickelt wurde.</p>
-                      <p>Im Rahmen einer Kooperation durften wir für die Bestandsapplikation MRTIS plattformunabhängige Services zur Aufbereitung und Transformation von nautischen Daten im Format S57 (ENC) bzw. S101 entwickelt. Mithilfe von Open-Source Lösungen wurde ein System entwickelt, in dem aus den Ausgangsdaten im Binärformat über mehrere Prozesse performative Vektorkacheln zur Verfügung gestellt werden.</p>
-                      <p>Bereits in der Vergangenheit wurde für MRTIS eine Visualisierung für Winddaten erstellt. Fokus der MRTIS-Applikation ist bei jedem Projekt eine unaufdringliche Kartographie, um die Navigation am Schiff möglichst sicher zu gestalten.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Analyse von offenen Dateiformaten</li>
-                      <li>Serverseitige Datenaufbereitung, inklusive Bereitstellung von Vektorkacheln</li>
-                      <li>Anpassung der Datenstruktur und Kartographie an die Bestandsapplikation</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>MRTIS</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Das Mississippi River Traffic Information Service (MRTIS), ist
+                ein hochmodernes System zur Bereitstellung von
+                Schifffahrtsinformationen und zur Schiffsverfolgung, das
+                speziell für den Mississippi entwickelt wurde.
+              </p>
+              <p>
+                Im Rahmen einer Kooperation durften wir für die
+                Bestandsapplikation MRTIS plattformunabhängige Services zur
+                Aufbereitung und Transformation von nautischen Daten im Format
+                S57 (ENC) bzw. S101 entwickelt. Mithilfe von Open-Source
+                Lösungen wurde ein System entwickelt, in dem aus den
+                Ausgangsdaten im Binärformat über mehrere Prozesse performative
+                Vektorkacheln zur Verfügung gestellt werden.
+              </p>
+              <p>
+                Bereits in der Vergangenheit wurde für MRTIS eine Visualisierung
+                für Winddaten erstellt. Fokus der MRTIS-Applikation ist bei
+                jedem Projekt eine unaufdringliche Kartographie, um die
+                Navigation am Schiff möglichst sicher zu gestalten.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Analyse von offenen Dateiformaten</li>
+                <li>
+                  Serverseitige Datenaufbereitung, inklusive Bereitstellung von
+                  Vektorkacheln
+                </li>
+                <li>
+                  Anpassung der Datenstruktur und Kartographie an die
+                  Bestandsapplikation
+                </li>
+              </ul>
+            </div>
 
-                    <tr><td>Zeitraum:</td>
-                    <td>2025</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td>MRTIS LLC</td></tr>
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2025</div>
+            <div class="label">Kunde:</div>
+            <div class="text">MRTIS LLC</div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="waldoekologie" filecount="14">
-            <div class="bigimg"></div>
-              <h2>Waldökologische Serviceplattform</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Aufgabe war es, eine Waldökologische Serviceplattform aufzubauen, die sich einerseits mit waldökologischem Wissensmanagement („Waldökologischen Fragestellungen“) und Serviceleistungen („Waldökologischen Planerstellung für Forstbetriebe“) beschäftigt und dadurch eine Annäherung der beiden Sektoren Forstwirtschaft und Naturschutz anstrebt, als auch wissenschaftlich belegte und biodiversitätsrelevante Grundlagenarbeit für die Einbindung von waldökologischen Aspekten im Rahmen der nachhaltigen Waldbewirtschaftung schafft.</p>
-                      <p>Die Serviceplattform sollte Bereiche anbieten unter andere für einen Downloadbereich für Pläne, ein Knowledge Hub zu aktuellen Projekten und Themen, sowie eine interaktive Karte mit regionalem Einstieg zu Projekten, Waldbauliche Maßnahmen und Förderungen auf Bundeslandebene. Ziel war es, den Nutzer:innen einen Überblick über die bereits umgesetzten Projekte und möglichen Förderungen in ihrer Region zu ermöglichen.</p>
-                      <p>Ein weiterer wichtiger Punkt war die Bereitstellung von Planungsformularen für Waldbesitzer:innen, in denen diese Ihren Wald spezifizieren und damit einen Überblick über mögliche Maßnahmen / Förderungen erhalten können.</p>
-                    </td></tr>
-                      
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Datengrundlagensichtung und Systematisierung / Priorisierung</li>
-                      <li>Datenbankerstellung und Erstbefüllung mit Stammdaten und Einpflegen des aktuellen Stands der Projekt-Datenbank (aus verknüpften Excel-Sheets)</li>
-                      <li>UX / UI Konzept, Layout unter Einbindung einer externen Grafikerin</li>
-                      <li>Web-Entwicklung Frontend / Backend / Schnittstellen</li>
-                      <li>Hosting für den Projektzeitraum</li>
-                    </ul></td></tr>
-                    <tr><td>Zeitraum:</td>
-                    <td>2024 - 2025</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://www.waldoekologie-service.at/" target="_blank">www.waldoekologie-service.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a target="_blank" href="https://www.bfw.gv.at/">Bundesforschungszentrum für Wald (BFW)</a></td></tr>
-                    <tr><td></td><td><img width="200px" src="referenzen/logoBFW2025.png"></td></tr>
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          <div class="bigimg"></div>
+          <h2>Waldökologische Serviceplattform</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Aufgabe war es, eine Waldökologische Serviceplattform
+                aufzubauen, die sich einerseits mit waldökologischem
+                Wissensmanagement („Waldökologischen Fragestellungen“) und
+                Serviceleistungen („Waldökologischen Planerstellung für
+                Forstbetriebe“) beschäftigt und dadurch eine Annäherung der
+                beiden Sektoren Forstwirtschaft und Naturschutz anstrebt, als
+                auch wissenschaftlich belegte und biodiversitätsrelevante
+                Grundlagenarbeit für die Einbindung von waldökologischen
+                Aspekten im Rahmen der nachhaltigen Waldbewirtschaftung schafft.
+              </p>
+              <p>
+                Die Serviceplattform sollte Bereiche anbieten unter andere für
+                einen Downloadbereich für Pläne, ein Knowledge Hub zu aktuellen
+                Projekten und Themen, sowie eine interaktive Karte mit
+                regionalem Einstieg zu Projekten, Waldbauliche Maßnahmen und
+                Förderungen auf Bundeslandebene. Ziel war es, den Nutzer:innen
+                einen Überblick über die bereits umgesetzten Projekte und
+                möglichen Förderungen in ihrer Region zu ermöglichen.
+              </p>
+              <p>
+                Ein weiterer wichtiger Punkt war die Bereitstellung von
+                Planungsformularen für Waldbesitzer:innen, in denen diese Ihren
+                Wald spezifizieren und damit einen Überblick über mögliche
+                Maßnahmen / Förderungen erhalten können.
+              </p>
+            </div>
+
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Datengrundlagensichtung und Systematisierung / Priorisierung
+                </li>
+                <li>
+                  Datenbankerstellung und Erstbefüllung mit Stammdaten und
+                  Einpflegen des aktuellen Stands der Projekt-Datenbank (aus
+                  verknüpften Excel-Sheets)
+                </li>
+                <li>
+                  UX / UI Konzept, Layout unter Einbindung einer externen
+                  Grafikerin
+                </li>
+                <li>Web-Entwicklung Frontend / Backend / Schnittstellen</li>
+                <li>Hosting für den Projektzeitraum</li>
+              </ul>
+            </div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2024 - 2025</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://www.waldoekologie-service.at/" target="_blank"
+                >www.waldoekologie-service.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a target="_blank" href="https://www.bfw.gv.at/"
+                >Bundesforschungszentrum für Wald (BFW)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img width="200px" src="referenzen/logoBFW2025.png" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="pvsolar" filecount="6">
-            <div class="bigimg"></div>
-              <h2>Photovoltaikausbau und<br />Energienetze Region SWS</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td>
+          <div class="bigimg"></div>
+          <h2>Photovoltaikausbau und<br />Energienetze Region SWS</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Der Auftraggeber benötigte eine Webplattform die den Ausbau und
+                das Potential von Photovoltaikanlagen (anhand ihrer Lagegunst)
+                sowie die Einspeisekapazitäten der Strominfrastruktur und damit
+                auch gewünschte Lagen (von Seiten der vorhandenen Infrastruktur)
+                ausweisen sollte. Die Plattform soll in einen öffentlichen und
+                einen nicht-öffentlichen (Verwaltung) Bereich unterteilt werden.
+              </p>
+              <p>Funktion des öffentlichen Bereichs:</p>
+              <ul>
+                <li>
+                  Darstellung Dachflächen-Potenzial (Daten aus GIS Stmk, vom AG
+                  bereitgestellt)
+                </li>
+                <li>Verteilung Solaranlagen (Heatmap-Interpretation)</li>
+                <li>Strominfrastruktur / Leitungsnetz</li>
+              </ul>
+              <br />
+              <p>Funktionen des nicht-öffentlichen Bereichs:</p>
+              <ul>
+                <li>
+                  Tool für Gemeinden: Netzabsagen und Zusagen dokumentieren
+                </li>
+                <li>Eintragen von Solar-Anlagen durch Gemeinde ermöglichen</li>
+                <li>
+                  Geschütze Benutzerebene, unterschiedliche Benutzer möglich,
+                  aber Vergabe nur zentral über Admin, keine Verwaltung durch
+                  Nutzer selbst
+                </li>
+              </ul>
+            </div>
 
-                      <p>Der Auftraggeber benötigte eine Webplattform die den Ausbau und das Potential von Photovoltaikanlagen (anhand ihrer Lagegunst) sowie die Einspeisekapazitäten der Strominfrastruktur und damit auch gewünschte Lagen (von Seiten der vorhandenen Infrastruktur) ausweisen sollte. Die Plattform soll in einen öffentlichen und einen nicht-öffentlichen (Verwaltung) Bereich unterteilt werden.</p>
-                      <p>Funktion des öffentlichen Bereichs:</p>
-                      <ul>
-                      <li>Darstellung Dachflächen-Potenzial (Daten aus GIS Stmk, vom AG bereitgestellt)</li>
-                      <li>Verteilung Solaranlagen (Heatmap-Interpretation)</li>
-                      <li>Strominfrastruktur / Leitungsnetz</li>
-                      </ul>
-                      <br>
-                      <p>Funktionen des nicht-öffentlichen Bereichs:</p>
-                      <ul>
-                      <li>Tool für Gemeinden: Netzabsagen und Zusagen dokumentieren</li>
-                      <li>Eintragen von Solar-Anlagen durch Gemeinde ermöglichen</li>
-                      <li>Geschütze Benutzerebene, unterschiedliche Benutzer möglich, aber Vergabe nur zentral über Admin, keine Verwaltung durch Nutzer selbst</li>
-                      </ul>
-                    </td></tr>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Konzeption / Entwurf mit dem AG, Darstellung von Best-Practice
+                  Beispielen
+                </li>
+                <li>Backend mit DB und STRAPI</li>
+                <li>Kartenaufbereitung und Übernahme ins Backend</li>
+                <li>
+                  Erstellung der Kartenapplikation, NodeJS mit VUE und
+                  OpenLayers
+                </li>
+                <li>Hosting für 2 Jahre</li>
+              </ul>
+            </div>
 
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                Je nach der durch den Login definierten Rolle stellt das Portal
+                unterschiedliche Layer dar bzw. erlaubt andere Operationen, z.B.
+                die Freigabe von eingegeben Daten usw.
+              </p>
+            </div>
 
-                      <tr><td>Schwerpunkte:</td><td><ul>
-                        <li>Konzeption / Entwurf mit dem AG, Darstellung von Best-Practice Beispielen</li>
-                        <li>Backend mit DB und STRAPI</li>
-                        <li>Kartenaufbereitung und Übernahme ins Backend</li>
-                        <li>Erstellung der Kartenapplikation, NodeJS mit VUE und OpenLayers</li>
-                        <li>Hosting für 2 Jahre</li>
-                    </ul></td></tr>
-
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>Je nach der durch den Login definierten Rolle stellt das Portal unterschiedliche Layer dar bzw. erlaubt andere Operationen, z.B. die Freigabe von eingegeben Daten usw.</p>
-                      </td>
-                    </tr>
-
-
-                    <tr><td>Zeitraum:</td>
-                    <td>204</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://pv-sws.eu-regionalmanagement.at/" target="_blank">pv-sws.eu-regionalmanagement.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.rmsw.at/" target="_blank">Regionalmanagement Südweststeiermark</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logo-rms.png" width="200px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">204</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://pv-sws.eu-regionalmanagement.at/" target="_blank"
+                >pv-sws.eu-regionalmanagement.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.rmsw.at/" target="_blank"
+                >Regionalmanagement Südweststeiermark</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logo-rms.png" width="200px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
+        <div
+          class="oneproject"
+          filename="hist"
+          filecount="8"
+          video08="https://www.youtube.com/watch?v=vWvgmqQVisk">
+          <div class="bigimg"></div>
+          <h2>Austrian Map - Historical Maps</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für die 100-Jahr-Feier des BEV im Jahr 2024 sollte unter anderem
+                die Austrian Map mit umfangreichen historischen Karten erweitert
+                werden. Wir durften wir im Rahmen einer Entwickler-Kooperation
+                Teil der Entstehung der „HistMap“ sein. Aufgaben waren sowohl
+                Konzeption (UX/UI) als auch Umsetzung.
+              </p>
+              <p>
+                Dank der der vorbildlichen Kooperation konnten wir uns nahtlos
+                in das vorhandene Entwicklerteam integrieren und unsere Ideen
+                und Umsetzungskonzepte einbringen. Das beim Auftraggeber
+                vorhandene fortgeschrittene Know-How erleichterte dies
+                zusätzlich.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Teilnahme an Ideenfindungs- Workshop für 100 Jahre BEV und
+                  HistMap
+                </li>
+                <li>Ideen- und Konzeptentwicklung</li>
+                <li>Webentwicklung in React</li>
+              </ul>
+            </div>
 
-        <div class="oneproject" filename="hist" filecount="8" video08="https://www.youtube.com/watch?v=vWvgmqQVisk">
-            <div class="bigimg"></div>
-              <h2>Austrian Map - Historical Maps</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Für die 100-Jahr-Feier des BEV im Jahr 2024 sollte unter anderem die Austrian Map mit umfangreichen historischen Karten erweitert werden. Wir durften wir im Rahmen einer Entwickler-Kooperation Teil der Entstehung der „HistMap“ sein. Aufgaben waren sowohl Konzeption (UX/UI) als auch Umsetzung.</p>
-                      <p>Dank der der vorbildlichen Kooperation konnten wir uns nahtlos in das vorhandene Entwicklerteam integrieren und unsere Ideen und Umsetzungskonzepte einbringen. Das beim Auftraggeber vorhandene fortgeschrittene Know-How erleichterte dies zusätzlich.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Teilnahme an Ideenfindungs- Workshop für 100 Jahre BEV und HistMap</li>
-                      <li>Ideen- und Konzeptentwicklung</li>
-                      <li>Webentwicklung in React</li>
-                    </ul></td></tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                „On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent
+                beauftragt, in dessen Rahmen wir uns agil in laufende
+                Entwicklungsprozesse integrieren durften.
+              </p>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>„On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent beauftragt, in dessen Rahmen wir uns agil in laufende Entwicklungsprozesse integrieren durften.</p>
-                      </td>
-                    </tr>
-
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2024</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://maps.bev.gv.at/" target="_blank">maps.bev.gv.at/</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bev.gv.at/" target="_blank">Bundesamt für Eich- und Vermessungswesen (BEV)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logobev.png" width="200px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2024</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://maps.bev.gv.at/" target="_blank"
+                >maps.bev.gv.at/</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bev.gv.at/" target="_blank"
+                >Bundesamt für Eich- und Vermessungswesen (BEV)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logobev.png" width="200px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="waldinventur" filecount="11">
-            <div class="bigimg"></div>
-              <h2>Österreichische Waldinventur</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td>
-                      <p>Wie alle Länder der EU ist auch Österreich zu einer Waldinventur verpflichtet. Damit beauftragt ist das Bundesforschungs- und Ausbildungszentrum für Wald, Naturgefahren und Landschaft (BFW). Die dazugehörigen Daten werden seit 2000 in einem einheitlichen Schema erhoben und in einer BFW-internen Datenbank gespeichert und verarbeitet.</p>
-                        <p>Ein zu schaffendes Portal sollte diese Daten in unterschiedlichen Sichten zugänglich machen, zum einen über Choroplethenkarten, zum anderen als Datendownloads in Tabellenform. Zusätzlich sollten die vom BFW aus den Daten laufend aktualisierten Wald- und Baumartenkarte als Rasterkarte darstellbar sein. Design-Vorgabe war „Desktop First“ - dennoch musste aber eine einwandfreie Benutzbarkeit auch auf mobilen Endgeräten gegeben sein (responsive Design)</p>
-                        <p>Aktualisierungen sollte der Auftraggeber zukünftig selbst durchführen können, das BFW hatte die Vorgabe, die Website selbst zu hosten, ohne aber dadurch großen Aufwand für Sicherheitsfeatures zu haben.</p>
-                    </td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                          <li>Grundlagenrecherche (Datenmodell) & Gemeinsame Erarbeitung eines Standards für standardisierte Datenanlieferungen.</li>
-                          <li>Ermittlung notwendiger Preprocessing-Schritte</li>
-                          <li>UX / UI - Entwurf (Wireframes), Responsive Design- Endgültiges Design / Mockups durch Einbindung einer externen Grafikerin. Berücksichtigung des CI-Designs des BFW.</li>
-                          <li>Preprocessing Skripts mit integrierter Fehlerkontrolle</li>
-                          <li>Implementierung eines Staging-Prozesses zum Qualitätsmanagement</li>
-                          <li>Web-Development / Auto-Deployment</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Österreichische Waldinventur</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Wie alle Länder der EU ist auch Österreich zu einer Waldinventur
+                verpflichtet. Damit beauftragt ist das Bundesforschungs- und
+                Ausbildungszentrum für Wald, Naturgefahren und Landschaft (BFW).
+                Die dazugehörigen Daten werden seit 2000 in einem einheitlichen
+                Schema erhoben und in einer BFW-internen Datenbank gespeichert
+                und verarbeitet.
+              </p>
+              <p>
+                Ein zu schaffendes Portal sollte diese Daten in
+                unterschiedlichen Sichten zugänglich machen, zum einen über
+                Choroplethenkarten, zum anderen als Datendownloads in
+                Tabellenform. Zusätzlich sollten die vom BFW aus den Daten
+                laufend aktualisierten Wald- und Baumartenkarte als Rasterkarte
+                darstellbar sein. Design-Vorgabe war „Desktop First“ - dennoch
+                musste aber eine einwandfreie Benutzbarkeit auch auf mobilen
+                Endgeräten gegeben sein (responsive Design)
+              </p>
+              <p>
+                Aktualisierungen sollte der Auftraggeber zukünftig selbst
+                durchführen können, das BFW hatte die Vorgabe, die Website
+                selbst zu hosten, ohne aber dadurch großen Aufwand für
+                Sicherheitsfeatures zu haben.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Grundlagenrecherche (Datenmodell) & Gemeinsame Erarbeitung
+                  eines Standards für standardisierte Datenanlieferungen.
+                </li>
+                <li>Ermittlung notwendiger Preprocessing-Schritte</li>
+                <li>
+                  UX / UI - Entwurf (Wireframes), Responsive Design- Endgültiges
+                  Design / Mockups durch Einbindung einer externen Grafikerin.
+                  Berücksichtigung des CI-Designs des BFW.
+                </li>
+                <li>Preprocessing Skripts mit integrierter Fehlerkontrolle</li>
+                <li>
+                  Implementierung eines Staging-Prozesses zum
+                  Qualitätsmanagement
+                </li>
+                <li>Web-Development / Auto-Deployment</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                            <li>Die Website ist serverless, d.h. es gibt keine Datenbankkomponente / Schnittstellen und damit auch keine zu berücksichtigende Sicherheitsaspekte.</li>
-                            <li>Um Fehler bei Updates zu vermeiden, wurde in die Pre-Processing-Scripts umfangreiche Fehler-Kontrollmechanismen integriert.</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Die Website ist serverless, d.h. es gibt keine
+                  Datenbankkomponente / Schnittstellen und damit auch keine zu
+                  berücksichtigende Sicherheitsaspekte.
+                </li>
+                <li>
+                  Um Fehler bei Updates zu vermeiden, wurde in die
+                  Pre-Processing-Scripts umfangreiche Fehler-Kontrollmechanismen
+                  integriert.
+                </li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2021 - 2023 (Betreuung fortlaufend)</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://waldinventur.at/" target="_blank">www.waldinventur.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a target="_blank" href="https://www.bfw.gv.at/">Bundesforschungszentrum für Wald (BFW)</a></td></tr>
-                    <tr><td></td><td><img width="200px" src="referenzen/logoBFW2025.png"></td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2021 - 2023 (Betreuung fortlaufend)</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://waldinventur.at/" target="_blank"
+                >www.waldinventur.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a target="_blank" href="https://www.bfw.gv.at/"
+                >Bundesforschungszentrum für Wald (BFW)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img width="200px" src="referenzen/logoBFW2025.png" />
+            </div>
           </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
 
         <div class="oneproject" filename="agraratlas" filecount="9">
-            <div class="bigimg"></div>
-              <h2>Inspire Agraratlas</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Das Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BMLUK, zum Zeitpunkt der Beauftragung BML) schafft mit dem INSPIRE Agraratlas einen auf Informations- und Planungsbedürfnisse von Landwirten zugeschnittenen Zugangspunkt zu offenen Daten für die Landwirtschaft.</p>
-                      <p>Dargestellt werden Karten-Layer mit Bewirtschaftungsgebieten, unter anderem im Kontext zum Mehrfachantrag der jeweils neuen Förderperiode für die Gemeinsame Agrarpolitik (GAP) ab 2023, Gewässernetz, Höhe und Schutzgebiete. Der INSPIRE Agraratlas stellt Verhältnisse auf Schlagebene dar, zeigt die Gebietsabgrenzungen auf und soll vorausschauende Planung unterstützen, sodass die Informationen bestmöglich genutzt werden können. Die dargestellten Karten-Layer haben ausschließlich Informationscharakter.</p>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Consulting Datenaufarbeitung, Optimierung der Datenmengen für schnelle Datenübertragung an den Web-Browser (Vektorkacheln, Cloud-optimized GeoTIFF)</li>
-                      <li>Konzeption kartographischer Inhalte (Choroplethenkarten) und der Interaktivität dynamischer Karten</li>
-                      <li>UX/UI Konzeption / Design</li>
-                      <li>Web-Entwicklung unter Verwendung von Open-Source-Komponenten</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Inspire Agraratlas</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Das Bundesministerium für Land- und Forstwirtschaft, Klima- und
+                Umweltschutz, Regionen und Wasserwirtschaft (BMLUK, zum
+                Zeitpunkt der Beauftragung BML) schafft mit dem INSPIRE
+                Agraratlas einen auf Informations- und Planungsbedürfnisse von
+                Landwirten zugeschnittenen Zugangspunkt zu offenen Daten für die
+                Landwirtschaft.
+              </p>
+              <p>
+                Dargestellt werden Karten-Layer mit Bewirtschaftungsgebieten,
+                unter anderem im Kontext zum Mehrfachantrag der jeweils neuen
+                Förderperiode für die Gemeinsame Agrarpolitik (GAP) ab 2023,
+                Gewässernetz, Höhe und Schutzgebiete. Der INSPIRE Agraratlas
+                stellt Verhältnisse auf Schlagebene dar, zeigt die
+                Gebietsabgrenzungen auf und soll vorausschauende Planung
+                unterstützen, sodass die Informationen bestmöglich genutzt
+                werden können. Die dargestellten Karten-Layer haben
+                ausschließlich Informationscharakter.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Consulting Datenaufarbeitung, Optimierung der Datenmengen für
+                  schnelle Datenübertragung an den Web-Browser (Vektorkacheln,
+                  Cloud-optimized GeoTIFF)
+                </li>
+                <li>
+                  Konzeption kartographischer Inhalte (Choroplethenkarten) und
+                  der Interaktivität dynamischer Karten
+                </li>
+                <li>UX/UI Konzeption / Design</li>
+                <li>
+                  Web-Entwicklung unter Verwendung von Open-Source-Komponenten
+                </li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                          <li>Serverless - Lösung ohne Datenbank oder Schnittstellen im Hintergrund</li>
-                          <li>Räumliche Abfragen mit direkt im Browser berechneten Abfragen (z.B. “wie viel % meiner Fläche haben eine Hangneigung über 50%")</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Serverless - Lösung ohne Datenbank oder Schnittstellen im
+                  Hintergrund
+                </li>
+                <li>
+                  Räumliche Abfragen mit direkt im Browser berechneten Abfragen
+                  (z.B. “wie viel % meiner Fläche haben eine Hangneigung über
+                  50%")
+                </li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2022 - heute (fortlaufende Betreuung)</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bmluk.gv.at/" target="_blank">Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft (BML)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/BMLUK_Logo_srgb.svg" width="300px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2022 - heute (fortlaufende Betreuung)</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bmluk.gv.at/" target="_blank"
+                >Bundesministerium für Land- und Forstwirtschaft, Klima- und
+                Umweltschutz, Regionen und Wasserwirtschaft (BML)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/BMLUK_Logo_srgb.svg" width="300px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="sofisch" filecount="9">
-            <div class="bigimg"></div>
-              <h2>soFisch Bestellsystem</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Die Firma soFisch GmbH, der wichtigste Fischhändler in Graz, trat an uns mit dem Wunsch heran, ein individuelles System zu Aufnahme von Kunden-Vorbestellungen zu schaffen. Das System sollte so entworfen sein, dass es laufen weiterentwickelt und mit neuen Features erweitert werden kann. Ziel ist es, irgendwann einmal, die gesamte Waren- und Lagerwirtschaft weitgehend über das System abzuwickeln.</p>
-                      <p>Die Produktlogistik für den Fischhandel ist sehr komplex, dafür wurde von uns zunächst eine Datenbank-Struktur entworfen, die nicht nur die unterschiedlichen Basis-Daten wie Produkt-Bestand, Kunden, Lieferanten etc. abbilden konnte, sondern auch die laufenden Bestellungen in unterschiedlichen Filialen. Dabei bleibt die Datenbank aber erweiterbar, skalierbar und abwärtskompatibel zu allen Bestandsdaten seit Projektstart.</p>
-                    <p>Die Applikation wurde als Web-App mit Offline-Modus entworfen, das garantiert am Tablet das Verhalten einer nativen App und damit die Einsatzbarkeit am Point of Sale. Das mächtige Backend verzichtet auf Offline-Funktionalität, bietet dafür aber stets den gesamten Zugriff auf alle Daten.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Consulting</li>
-                      <li>Datenbankdesign und -Programmierung</li>
-                      <li>UX / UI – Design</li>
-                      <li>Web-Entwicklung, Progressive Web-App. Basis sind ausschließlich Open-Source-Komponenten</li>
-                      <li>Hosting, Server-Betreuung</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>soFisch Bestellsystem</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Die Firma soFisch GmbH, der wichtigste Fischhändler in Graz,
+                trat an uns mit dem Wunsch heran, ein individuelles System zu
+                Aufnahme von Kunden-Vorbestellungen zu schaffen. Das System
+                sollte so entworfen sein, dass es laufen weiterentwickelt und
+                mit neuen Features erweitert werden kann. Ziel ist es,
+                irgendwann einmal, die gesamte Waren- und Lagerwirtschaft
+                weitgehend über das System abzuwickeln.
+              </p>
+              <p>
+                Die Produktlogistik für den Fischhandel ist sehr komplex, dafür
+                wurde von uns zunächst eine Datenbank-Struktur entworfen, die
+                nicht nur die unterschiedlichen Basis-Daten wie Produkt-Bestand,
+                Kunden, Lieferanten etc. abbilden konnte, sondern auch die
+                laufenden Bestellungen in unterschiedlichen Filialen. Dabei
+                bleibt die Datenbank aber erweiterbar, skalierbar und
+                abwärtskompatibel zu allen Bestandsdaten seit Projektstart.
+              </p>
+              <p>
+                Die Applikation wurde als Web-App mit Offline-Modus entworfen,
+                das garantiert am Tablet das Verhalten einer nativen App und
+                damit die Einsatzbarkeit am Point of Sale. Das mächtige Backend
+                verzichtet auf Offline-Funktionalität, bietet dafür aber stets
+                den gesamten Zugriff auf alle Daten.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Consulting</li>
+                <li>Datenbankdesign und -Programmierung</li>
+                <li>UX / UI – Design</li>
+                <li>
+                  Web-Entwicklung, Progressive Web-App. Basis sind
+                  ausschließlich Open-Source-Komponenten
+                </li>
+                <li>Hosting, Server-Betreuung</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                          <li>Streng getrennte Rollen (Verkauf, Administration) mit Layout, Funktionalität je nach Login</li>
-                          <li>Augenmerk auf Absicherung gegen Bedienungsfehler</li>
-                          <li>Offline-Funktionalität und Synchronisation</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Streng getrennte Rollen (Verkauf, Administration) mit Layout,
+                  Funktionalität je nach Login
+                </li>
+                <li>Augenmerk auf Absicherung gegen Bedienungsfehler</li>
+                <li>Offline-Funktionalität und Synchronisation</li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2021 - heute</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.sofisch.com" target="_blank">soFisch GmbH</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logo-sofisch.png" width="200px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2021 - heute</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.sofisch.com" target="_blank">soFisch GmbH</a>
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logo-sofisch.png" width="200px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="ama" filecount="6">
-            <div class="bigimg"></div>
-              <h2>AMA (Mobile) Webapplikationen</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Für Agrarmarkt Austria (AMA) sind wir seit 2019 in den Bereichen Consulting und Unterstützung bei der Softwareentwicklung für moderne kartenbasierte Web-Applikationen tätig.</p>
-                      <p>Diese sollen auf verschiedenen Endgeräten (PCs, Tablets, Smartphones) komfortabel bedienbar sein, und räumliche Sachverhalte auf einfache Art vermitteln.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Konzeption kartographischer Inhalte (Choroplethenkarten) und der Interaktivität dynamischer Karten</li>
-                      <li>Beratung hinsichtlich Stack und Entwicklungsumegebung moderner JavaScript Applikationen</li>
-                      <li>Unterstützung bei der Umsetzung der Software „AMA Flächenauswertung“ mit OpenLayers (Kartendarstellung) und Angular (Web-Framwork)</li>
-                      <li>Umsetzung eines schlanken OpenLayers-Wrappers für die einfache Einbindung von Karten, Geoinformation und räumlichen Editierfunktionen in unternehmensweite mobile AMA-Webapplikationen auf Basis von Ionic/Cordova, Angular und Oracle Apex</li>
-                </ul></td></tr>
-                    <tr><td>Zeitraum:</td>
-                    <td>2019 bis heute</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://flaechenauswertung.services.ama.at/" target="_blank">flaechenauswertung.services.ama.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.ama.at/" target="_blank">AMA</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ama.png" class="reflogo"></td></tr>
-                  </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+          <div class="bigimg"></div>
+          <h2>AMA (Mobile) Webapplikationen</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für Agrarmarkt Austria (AMA) sind wir seit 2019 in den Bereichen
+                Consulting und Unterstützung bei der Softwareentwicklung für
+                moderne kartenbasierte Web-Applikationen tätig.
+              </p>
+              <p>
+                Diese sollen auf verschiedenen Endgeräten (PCs, Tablets,
+                Smartphones) komfortabel bedienbar sein, und räumliche
+                Sachverhalte auf einfache Art vermitteln.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Konzeption kartographischer Inhalte (Choroplethenkarten) und
+                  der Interaktivität dynamischer Karten
+                </li>
+                <li>
+                  Beratung hinsichtlich Stack und Entwicklungsumegebung moderner
+                  JavaScript Applikationen
+                </li>
+                <li>
+                  Unterstützung bei der Umsetzung der Software „AMA
+                  Flächenauswertung“ mit OpenLayers (Kartendarstellung) und
+                  Angular (Web-Framwork)
+                </li>
+                <li>
+                  Umsetzung eines schlanken OpenLayers-Wrappers für die einfache
+                  Einbindung von Karten, Geoinformation und räumlichen
+                  Editierfunktionen in unternehmensweite mobile
+                  AMA-Webapplikationen auf Basis von Ionic/Cordova, Angular und
+                  Oracle Apex
+                </li>
+              </ul>
+            </div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2019 bis heute</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a
+                href="https://flaechenauswertung.services.ama.at/"
+                target="_blank"
+                >flaechenauswertung.services.ama.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.ama.at/" target="_blank">AMA</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-ama.png"
+                class="reflogo" />
+            </div>
           </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
 
-        <div class="oneproject" filename="standortkompass" filecount="17" video17="https://www.youtube.com/watch?v=I-ikpHQfxvA">
-              <div class="bigimg"></div>
-            <h2>Plattform standortkompass.at</h2>
-            <table>
-                <tr><td>Beschreibung:</td>
-                  <td><p>Für die Wirtschaftsagentur des Landes Niederösterreich haben wir als Teil der w3geo GmbH das Portal www.standortkompass.at für die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das vollresponsive Frontend wird ergänzt durch umfangreiche Administrationswerkzeuge, welche sowohl Kunden wie auch Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.</p>
-                    <p>Für dieses Projekt durften wir 2017 gemeinsam mit dem Kunden den Preis für den 2. Platz in der Sparte "IT" beim Constantinus Award entgegennehmen.</p>
-                    <p>Ein Relaunch 2021 stellte das gesamte Portal auf eine komplett neue technische Basis und führte die Verwaltung eigener Immobilien durch Benutzer ein. Dafür wurde auch das Backend für die Portalbetreuer sukzessive erweitert und durch wichtige Funktionalitäten erweitert.</p>
-                  <tr><td>Schwerpunkte:</td><td><ul>
-                    <li>Laufende technische Beratung</li>
-                    <li>Konzeption, Agile Entwicklung</li>
-                    <li>Web-Entwicklung Frontend, Backend</li>
-                    <li>Datenbankentwicklung, Entwicklung von Schnittstellen (API)</li>
-                    <li>Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver / OpenLayers</li>
-                    <li>Hosting / Serverbetreuung</li>
-              </ul></td></tr>
-                  <tr><td>Besonderheiten:</td>
-                  <td>
-                    <p>Eine Herausforderung war die Kopplung an das Intranet CRM, welche über gesicherte Schnittstellen umgesetzt wurde. Dies wurde in Form spezieller Synchronisations-Mechanismen umgesetzt.</p>
-                    <p>Mit dem letzten Update-Zyklus wurde begonnen, dem Backend GIS-Funktionalitäten hinzuzufügen, was den Betreuern erspart, zwischen dem Portal und Drittanbieter-GIS-Software zu wechseln und so den Workflow beim Erstellen individueller Angebote enorm zu beschleunigen.</p>
-                  </td>
-              </tr>
-                  <tr><td>Zeitraum:</td>
-                  <td>2016 bis heute</td></tr>
-                  <tr><td>Link:</td>
-                  <td><a href="http://www.standortkompass.at" target="_blank">www.standortkompass.at</a></td></tr>
-                  <tr><td>Kunde:</td>
-                    <td><a href="https://www.ecoplus.at" target="_blank">ecoplus GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-ecoplus.png" class="reflogo"></td></tr>
-                </table>
-              <div class="thumbs"></div>
-              <div class="whiteout"></div>
-              <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+        <div
+          class="oneproject"
+          filename="standortkompass"
+          filecount="17"
+          video17="https://www.youtube.com/watch?v=I-ikpHQfxvA">
+          <div class="bigimg"></div>
+          <h2>Plattform standortkompass.at</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für die Wirtschaftsagentur des Landes Niederösterreich haben wir
+                als Teil der w3geo GmbH das Portal www.standortkompass.at für
+                die Suche und das Anbieten von Gewerbeimmobilien umgesetzt. Das
+                vollresponsive Frontend wird ergänzt durch umfangreiche
+                Administrationswerkzeuge, welche sowohl Kunden wie auch
+                Mitarbeitern von ecoplus die Verwaltung der Objekte erlaubt.
+              </p>
+              <p>
+                Für dieses Projekt durften wir 2017 gemeinsam mit dem Kunden den
+                Preis für den 2. Platz in der Sparte "IT" beim Constantinus
+                Award entgegennehmen.
+              </p>
+              <p>
+                Ein Relaunch 2021 stellte das gesamte Portal auf eine komplett
+                neue technische Basis und führte die Verwaltung eigener
+                Immobilien durch Benutzer ein. Dafür wurde auch das Backend für
+                die Portalbetreuer sukzessive erweitert und durch wichtige
+                Funktionalitäten erweitert.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Laufende technische Beratung</li>
+                <li>Konzeption, Agile Entwicklung</li>
+                <li>Web-Entwicklung Frontend, Backend</li>
+                <li>
+                  Datenbankentwicklung, Entwicklung von Schnittstellen (API)
+                </li>
+                <li>
+                  Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver
+                  / OpenLayers
+                </li>
+                <li>Hosting / Serverbetreuung</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                Eine Herausforderung war die Kopplung an das Intranet CRM,
+                welche über gesicherte Schnittstellen umgesetzt wurde. Dies
+                wurde in Form spezieller Synchronisations-Mechanismen umgesetzt.
+              </p>
+              <p>
+                Mit dem letzten Update-Zyklus wurde begonnen, dem Backend
+                GIS-Funktionalitäten hinzuzufügen, was den Betreuern erspart,
+                zwischen dem Portal und Drittanbieter-GIS-Software zu wechseln
+                und so den Workflow beim Erstellen individueller Angebote enorm
+                zu beschleunigen.
+              </p>
+            </div>
+
+            <div class="label">Zeitraum:</div>
+            <div class="text">2016 bis heute</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="http://www.standortkompass.at" target="_blank"
+                >www.standortkompass.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.ecoplus.at" target="_blank">ecoplus GmbH</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-ecoplus.png"
+                class="reflogo" />
+            </div>
           </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
 
         <div class="oneproject" filename="amap" filecount="11">
-            <div class="bigimg"></div>
-              <h2>Austrian Map</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Für das Bundes- Eich und Vermessungsamt durften wir im Rahmen einer Entwickler-Kooperation an der Entstehung der neuen „Austrian Map“ beteiligt sein, sowohl an der Konzeption als auch an der Umsetzung. Vor allem wurden spezifische wiederverwendbare Module mitentwickelt wie Suche, Toolbox, Layersteuerung etc. aber auch UI/UX mitgestaltet.</p>
-                      <p>Dank der der vorbildlichen Kooperation konnten wir uns nahtlos in das vorhandene Entwicklerteam integrieren und unsere Ideen und Umsetzungskonzepte einbringen. Das beim Auftraggeber vorhandene fortgeschrittene Know-How erleichterte dies zusätzlich.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Consulting Datenaufbereitung, Konzeptionierung von Tools</li>
-                      <li>Ideen- und Konzeptentwicklung</li>
-                      <li>Webentwicklung in React</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Austrian Map</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für das Bundes- Eich und Vermessungsamt durften wir im Rahmen
+                einer Entwickler-Kooperation an der Entstehung der neuen
+                „Austrian Map“ beteiligt sein, sowohl an der Konzeption als auch
+                an der Umsetzung. Vor allem wurden spezifische wiederverwendbare
+                Module mitentwickelt wie Suche, Toolbox, Layersteuerung etc.
+                aber auch UI/UX mitgestaltet.
+              </p>
+              <p>
+                Dank der der vorbildlichen Kooperation konnten wir uns nahtlos
+                in das vorhandene Entwicklerteam integrieren und unsere Ideen
+                und Umsetzungskonzepte einbringen. Das beim Auftraggeber
+                vorhandene fortgeschrittene Know-How erleichterte dies
+                zusätzlich.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Consulting Datenaufbereitung, Konzeptionierung von Tools
+                </li>
+                <li>Ideen- und Konzeptentwicklung</li>
+                <li>Webentwicklung in React</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>„On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent beauftragt, in dessen Rahmen wir uns agil in laufende Entwicklungsprozesse integrieren durften.</p>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                „On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent
+                beauftragt, in dessen Rahmen wir uns agil in laufende
+                Entwicklungsprozesse integrieren durften.
+              </p>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2023 - 2024</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://maps.bev.gv.at/" target="_blank">maps.bev.gv.at/</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bev.gv.at/" target="_blank">Bundesamt für Eich- und Vermessungswesen (BEV)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logobev.png" width="200px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2023 - 2024</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://maps.bev.gv.at/" target="_blank"
+                >maps.bev.gv.at/</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bev.gv.at/" target="_blank"
+                >Bundesamt für Eich- und Vermessungswesen (BEV)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logobev.png" width="200px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
-
-          <div class="oneproject" filename="istmobil" filecount="14" video14="https://www.youtube.com/watch?v=bbxIV68FcqI">
-            <div class="bigimg"></div>
+        <div
+          class="oneproject"
+          filename="istmobil"
+          filecount="14"
+          video14="https://www.youtube.com/watch?v=bbxIV68FcqI">
+          <div class="bigimg"></div>
           <h2>ISTmobil Dispositions-System</h2>
-          <table>
-              <tr><td>Beschreibung:</td>
-                <td><p>Für die Firma ISTmobil GmbH entwickelten und betreuten wir von 2014 – 2024 ein automatisiertes Fahrzeugs-Dispositionssystem. Die webbasierte Software war eine komplexe Verbindung aus Verwaltungs-Backend, Dispositions-Frontend für das Callcenter, Tablet-Frontend für die Fahrer und einer serverbasierenden Telefonanlage für das Callcenter.</p>
-                  <p>Aufgabe des Systems war die Annahme von Fahrtaufträgen im Callcenter und die automatisiert berechnete Zuweisung an Fahrzeuge. Laufender, vom Kunden wie auch den Fahrtunternehmen kommender Input aus der Praxis führten zur permanenten Optimierung des Systems. Ein wichtiger Aspekt war die Verwendung von Open Source Software und Daten, soweit irgend möglich, um die laufenden Kosten gering zu halten.</p>
-                  <p>Die Software wurde in individuell angepasster Version für unterschiedliche Regionen in Österreich / in der Schweiz auch als Insel-Lösung verwendet. Das System wurde von uns im redundanten Dual-Server Betrieb gehostet, um eine möglichst hohe Ausfallssicherheit zu gewährleisten.</p>
-                  <p><i>ANMERKUNG: Die Firma ISTmobil wurde im Jahre 2024 leider insolvent und der Betrieb des Systems musste eingestellt werden.</i></p>
-                <tr><td>Schwerpunkte:</td><td><ul>
-                  <li>Datenbankentwicklung und -Programmierung, Datenbank-Hosting mit Parallelbetrieb auf 2 Servern (Synchronisiert)</li>
-                  <li>Permanente Betreuung und Weiterentwicklung des Systems</li>
-                  <li>Laufende Updates und Fehlerkorrekturen, dank reiner Web-App-Basis Einspielen von Hot-Fixes möglich</li>
-                  <li>API-Entwicklung, auch zur Anbindung externer Systeme und der App</li>
-                  <li>KISS-Routing, ÖV-Routing auf Basis der VAO, Multimodales Routing</li>
-                  <li>Ausfallssicheres Hosting, 24/7 Betreuung</li>
-            </ul></td></tr>
-                <tr><td>Besonderheiten:</td>
-                <td><ul>
-                  <li>Das Backend war neben einer Datenbank-Wartungs-Plattform ein komplettes Buchhaltungs-System zur teilautomatisierten monatlichen Abrechnung</li>
-                  <li>Da die VAO-Schnittstelle (VAO = Verkehrsauskunft Österreich) zur ÖV-Anbindung kein echtes KISS-Routing beherrschte (Zubringung von Fahrgästen zu Bahnhöfen / Bushaltestellen), wurde von uns ein Wrapper entwickelt, der über mehrfache Abfragen der Schnittstelle dennoch ermöglichte – die Basis, um die Forderungen der Regionalentwicklungs-Abteilungen überhaupt zu erfüllen</li>
-                  <li>Zur Qualitätssicherung wurden von uns diverse Kontroll-Applikationen entwickelt, um z.B. durch Big-Data-Analyse aller Fahrdaten Auffälligkeiten oder systematische Routing-Probleme zu ermitteln</li>
-                </ul>                        </td>
-            </tr>
-                <tr><td>Zeitraum:</td>
-                <td>2014 bis 2024</td></tr>
-                <tr><td>Kunde:</td>
-                  <td><a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-istmobil.png" class="reflogo"></td></tr>
-              </table>
-            <div class="thumbs"></div>
-            <div class="whiteout"></div>
-            <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-        </div>                    
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für die Firma ISTmobil GmbH entwickelten und betreuten wir von
+                2014 – 2024 ein automatisiertes Fahrzeugs-Dispositionssystem.
+                Die webbasierte Software war eine komplexe Verbindung aus
+                Verwaltungs-Backend, Dispositions-Frontend für das Callcenter,
+                Tablet-Frontend für die Fahrer und einer serverbasierenden
+                Telefonanlage für das Callcenter.
+              </p>
+              <p>
+                Aufgabe des Systems war die Annahme von Fahrtaufträgen im
+                Callcenter und die automatisiert berechnete Zuweisung an
+                Fahrzeuge. Laufender, vom Kunden wie auch den Fahrtunternehmen
+                kommender Input aus der Praxis führten zur permanenten
+                Optimierung des Systems. Ein wichtiger Aspekt war die Verwendung
+                von Open Source Software und Daten, soweit irgend möglich, um
+                die laufenden Kosten gering zu halten.
+              </p>
+              <p>
+                Die Software wurde in individuell angepasster Version für
+                unterschiedliche Regionen in Österreich / in der Schweiz auch
+                als Insel-Lösung verwendet. Das System wurde von uns im
+                redundanten Dual-Server Betrieb gehostet, um eine möglichst hohe
+                Ausfallssicherheit zu gewährleisten.
+              </p>
+              <p>
+                <i
+                  >ANMERKUNG: Die Firma ISTmobil wurde im Jahre 2024 leider
+                  insolvent und der Betrieb des Systems musste eingestellt
+                  werden.</i
+                >
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Datenbankentwicklung und -Programmierung, Datenbank-Hosting
+                  mit Parallelbetrieb auf 2 Servern (Synchronisiert)
+                </li>
+                <li>Permanente Betreuung und Weiterentwicklung des Systems</li>
+                <li>
+                  Laufende Updates und Fehlerkorrekturen, dank reiner
+                  Web-App-Basis Einspielen von Hot-Fixes möglich
+                </li>
+                <li>
+                  API-Entwicklung, auch zur Anbindung externer Systeme und der
+                  App
+                </li>
+                <li>
+                  KISS-Routing, ÖV-Routing auf Basis der VAO, Multimodales
+                  Routing
+                </li>
+                <li>Ausfallssicheres Hosting, 24/7 Betreuung</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Das Backend war neben einer Datenbank-Wartungs-Plattform ein
+                  komplettes Buchhaltungs-System zur teilautomatisierten
+                  monatlichen Abrechnung
+                </li>
+                <li>
+                  Da die VAO-Schnittstelle (VAO = Verkehrsauskunft Österreich)
+                  zur ÖV-Anbindung kein echtes KISS-Routing beherrschte
+                  (Zubringung von Fahrgästen zu Bahnhöfen / Bushaltestellen),
+                  wurde von uns ein Wrapper entwickelt, der über mehrfache
+                  Abfragen der Schnittstelle dennoch ermöglichte – die Basis, um
+                  die Forderungen der Regionalentwicklungs-Abteilungen überhaupt
+                  zu erfüllen
+                </li>
+                <li>
+                  Zur Qualitätssicherung wurden von uns diverse
+                  Kontroll-Applikationen entwickelt, um z.B. durch
+                  Big-Data-Analyse aller Fahrdaten Auffälligkeiten oder
+                  systematische Routing-Probleme zu ermitteln
+                </li>
+              </ul>
+            </div>
 
-        <div class="oneproject" filename="kataster" filecount="9" video09="https://www.youtube.com/watch?v=GCWAkMaVcy4">
-            <div class="bigimg"></div>
-              <h2>Österreichischer Kataster Online</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Für das Bundes- Eich und Vermessungsamt durften wir im Rahmen einer Entwickler-Kooperation an der Entstehung der Online-Ausgabe des österreichischen Katasters beteiligt sein, sowohl an der Konzeption als auch an der Umsetzung. Neben der Entwicklung des grundlegenden Preprocessings der enorm umfangreichen Daten für eine performative Webdarstellung wurden auch spezifische wiederverwendbare Module mitentwickelt.</p>
-                      <p>Dank der der vorbildlichen Kooperation konnten wir uns nahtlos in das vorhandene Entwicklerteam integrieren und unsere Ideen und Umsetzungskonzepte einbringen. Das beim Auftraggeber vorhandene fortgeschrittene Know-How erleichterte dies zusätzlich.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Consulting Datenaufbereitung, Konzeptionierung von Tools</li>
-                      <li>Ideen- und Konzeptentwicklung</li>
-                      <li>Webentwicklung in React</li>
-                    </ul></td></tr>
-
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>„On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent beauftragt, in dessen Rahmen wir uns agil in laufende Entwicklungsprozesse integrieren durften.</p>
-                      </td>
-                    </tr>
-
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2023</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://kataster.bev.gv.at/" target="_blank">kataster.bev.gv.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.bev.gv.at/" target="_blank">Bundesamt für Eich- und Vermessungswesen (BEV)</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logobev.png" width="200px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2014 bis 2024</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-istmobil.png"
+                class="reflogo" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
-        
+
+        <div
+          class="oneproject"
+          filename="kataster"
+          filecount="9"
+          video09="https://www.youtube.com/watch?v=GCWAkMaVcy4">
+          <div class="bigimg"></div>
+          <h2>Österreichischer Kataster Online</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für das Bundes- Eich und Vermessungsamt durften wir im Rahmen
+                einer Entwickler-Kooperation an der Entstehung der
+                Online-Ausgabe des österreichischen Katasters beteiligt sein,
+                sowohl an der Konzeption als auch an der Umsetzung. Neben der
+                Entwicklung des grundlegenden Preprocessings der enorm
+                umfangreichen Daten für eine performative Webdarstellung wurden
+                auch spezifische wiederverwendbare Module mitentwickelt.
+              </p>
+              <p>
+                Dank der der vorbildlichen Kooperation konnten wir uns nahtlos
+                in das vorhandene Entwicklerteam integrieren und unsere Ideen
+                und Umsetzungskonzepte einbringen. Das beim Auftraggeber
+                vorhandene fortgeschrittene Know-How erleichterte dies
+                zusätzlich.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Consulting Datenaufbereitung, Konzeptionierung von Tools
+                </li>
+                <li>Ideen- und Konzeptentwicklung</li>
+                <li>Webentwicklung in React</li>
+              </ul>
+            </div>
+
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                „On Demand“ Kooperation, d.h. es wurde ein Stundenkontingent
+                beauftragt, in dessen Rahmen wir uns agil in laufende
+                Entwicklungsprozesse integrieren durften.
+              </p>
+            </div>
+
+            <div class="label">Zeitraum:</div>
+            <div class="text">2023</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://kataster.bev.gv.at/" target="_blank"
+                >kataster.bev.gv.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bev.gv.at/" target="_blank"
+                >Bundesamt für Eich- und Vermessungswesen (BEV)</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logobev.png" width="200px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
+
         <div class="oneproject" filename="gza" filecount="5">
-            <div class="bigimg"></div>
-              <h2>Gewässerzustandserfassung NÖ</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Aufgabe war die Entwicklung einer Web-Applikation für die mobile Gewässer-Zustandserfassung des Landes Niederösterreich. Vorbild dafür waren die davor schon erstellten Web-App-Clients für die Straßen- / Landesstraßen-Zustandserfassung. Anders als dort sollten die Daten allerdings direkt in das WIS (Wasser-Informations-System) des Landes gespeist werden bzw. auch die aktuellen Daten von dort synchronisiert werden. Zusätzlich zur Live-Datenerfassung sollte auch ein Offline-Modus verfügbar sein.</p>
-                      <p>Anders als bei vergleichbaren Aufträgen wurde das Projekt im Rahmen einer Schulungs- und Entwicklungsvereinbarung umgesetzt. Hintergrund war, dass parallel zur agilen Entwicklung der App ein Knowhow-Transfer in Form von Schulungen und Dokumentation stattfinden sollte.  Auch sollte im Zuge dieser Umsetzung die IT-Infrastruktur der Landes NÖ erfasst und ein modulares, komponentenbasiertes Microapp-System mit Schnittstellen erarbeitet werden, wie es von uns bereits im Rahmen des GIP2-Projektes konzeptioniert worden war.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Einbindung der Daten in WIS</li>
-                      <li>Prototypischer Entwicklungsprozess</li>
-                      <li>Consulting zur Architektur der  IT-Infrastruktur</li>
-                      <li>Consulting zu Komponenten-Entwicklung und Schnittstellendesign </li>
-                      <li>Knowhow-Transfer</li>
-                      <li>Progressive Webappentwicklung: Entwurf UI / UX, Entwickling der Web-Applikation unter Verwendung von Open-Source-Komponenten</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Gewässerzustandserfassung NÖ</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Aufgabe war die Entwicklung einer Web-Applikation für die mobile
+                Gewässer-Zustandserfassung des Landes Niederösterreich. Vorbild
+                dafür waren die davor schon erstellten Web-App-Clients für die
+                Straßen- / Landesstraßen-Zustandserfassung. Anders als dort
+                sollten die Daten allerdings direkt in das WIS
+                (Wasser-Informations-System) des Landes gespeist werden bzw.
+                auch die aktuellen Daten von dort synchronisiert werden.
+                Zusätzlich zur Live-Datenerfassung sollte auch ein Offline-Modus
+                verfügbar sein.
+              </p>
+              <p>
+                Anders als bei vergleichbaren Aufträgen wurde das Projekt im
+                Rahmen einer Schulungs- und Entwicklungsvereinbarung umgesetzt.
+                Hintergrund war, dass parallel zur agilen Entwicklung der App
+                ein Knowhow-Transfer in Form von Schulungen und Dokumentation
+                stattfinden sollte. Auch sollte im Zuge dieser Umsetzung die
+                IT-Infrastruktur der Landes NÖ erfasst und ein modulares,
+                komponentenbasiertes Microapp-System mit Schnittstellen
+                erarbeitet werden, wie es von uns bereits im Rahmen des
+                GIP2-Projektes konzeptioniert worden war.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Einbindung der Daten in WIS</li>
+                <li>Prototypischer Entwicklungsprozess</li>
+                <li>Consulting zur Architektur der IT-Infrastruktur</li>
+                <li>
+                  Consulting zu Komponenten-Entwicklung und Schnittstellendesign
+                </li>
+                <li>Knowhow-Transfer</li>
+                <li>
+                  Progressive Webappentwicklung: Entwurf UI / UX, Entwickling
+                  der Web-Applikation unter Verwendung von
+                  Open-Source-Komponenten
+                </li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                          <li>Keine reine Umsetzungs-Beauftragung, vielmehr agiler Consulting-, Kooperations- und Umsetzungsprozess</li>
-                          <li>Client nur geschützt zugänglich im Rahmen des Portalverbunds</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Keine reine Umsetzungs-Beauftragung, vielmehr agiler
+                  Consulting-, Kooperations- und Umsetzungsprozess
+                </li>
+                <li>
+                  Client nur geschützt zugänglich im Rahmen des Portalverbunds
+                </li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2020 - heute (laufende Erweiterung, Betreuung)</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.noe.gv.at/" target="_blank">Land Niederösterreich, Abteilung Wasserwirtschaft</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logo-landnoe.png" width="80px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">
+              2020 - heute (laufende Erweiterung, Betreuung)
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.noe.gv.at/" target="_blank"
+                >Land Niederösterreich, Abteilung Wasserwirtschaft</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logo-landnoe.png" width="80px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
-        
+
         <div class="oneproject" filename="wibug" filecount="10">
-            <div class="bigimg"></div>
-              <h2>Standortsuche Burgenland</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Aufgabe war die Erstellung einer Webplattform zur Bewerbung und Vermittlung von Gewerbeimmobilien im Burgenland. Unternehmer sollen mittels einer kartographisch hinterlegten Immobiliendatenbank bei der Standortsuche zur Gründung bzw. zum Ausbau ihres Unternehmens unterstützt werden.</p>
-                      <p>Die Plattform soll Unternehmen bei allen Fragen rund um Ansiedlungs- und Erweiterungsprojekte einen Ansprechpartner bieten. Zusätzlich zu den oben genannten Punkten soll die WiBuG (Wirtschaft Burgenland GmbH) und ihre Aufgaben präsentiert werden und die Kundennähe bzw. Kundenbindung verstärkt werden. In einer Ausbaustufe wurde das Einmelden von Leerständen direkt durch User ermöglicht.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Konzeption, Agile Entwicklung</li>
-                      <li>Datenbankentwicklung, Entwicklung von Schnittstellen (API)</li>
-                      <li>Web-Entwicklung Frontend, Backend</li>
-                      <li>Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver / OpenLayers</li>
-                      <li>Hosting / Serverbetreuung</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Standortsuche Burgenland</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Aufgabe war die Erstellung einer Webplattform zur Bewerbung und
+                Vermittlung von Gewerbeimmobilien im Burgenland. Unternehmer
+                sollen mittels einer kartographisch hinterlegten
+                Immobiliendatenbank bei der Standortsuche zur Gründung bzw. zum
+                Ausbau ihres Unternehmens unterstützt werden.
+              </p>
+              <p>
+                Die Plattform soll Unternehmen bei allen Fragen rund um
+                Ansiedlungs- und Erweiterungsprojekte einen Ansprechpartner
+                bieten. Zusätzlich zu den oben genannten Punkten soll die WiBuG
+                (Wirtschaft Burgenland GmbH) und ihre Aufgaben präsentiert
+                werden und die Kundennähe bzw. Kundenbindung verstärkt werden.
+                In einer Ausbaustufe wurde das Einmelden von Leerständen direkt
+                durch User ermöglicht.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Konzeption, Agile Entwicklung</li>
+                <li>
+                  Datenbankentwicklung, Entwicklung von Schnittstellen (API)
+                </li>
+                <li>Web-Entwicklung Frontend, Backend</li>
+                <li>
+                  Geodatenvisualisierung, Kartenapplikation auf Basis Geoserver
+                  / OpenLayers
+                </li>
+                <li>Hosting / Serverbetreuung</li>
+              </ul>
+            </div>
 
-                    <tr><td>Zeitraum:</td>
-                    <td>2020 – heute (Hosting, fortlaufende Betreuung)</td></tr>
-                    <tr><td>Link:</td>
-                    <td><a href="https://standortsuche-burgenland.at/" target="_blank">www.standortsuche-burgenland.at</a></td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://wirtschaftsagentur-burgenland.at/" target="_blank">Wirtschaftsagentur Burgenland</a></td></tr>
-                    <tr><td></td><td><img src="referenzen/logo-wibug.png" width="300px"</td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">
+              2020 – heute (Hosting, fortlaufende Betreuung)
+            </div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://standortsuche-burgenland.at/" target="_blank"
+                >www.standortsuche-burgenland.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a
+                href="https://wirtschaftsagentur-burgenland.at/"
+                target="_blank"
+                >Wirtschaftsagentur Burgenland</a
+              >
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="referenzen/logo-wibug.png" width="300px" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
-
 
         <div class="oneproject" filename="ebod" filecount="9">
           <div class="bigimg"></div>
-            <h2>Österreichische Bodenkarte</h2>
-            <table>
-                <tr><td>Beschreibung:</td>
-                  <td><p>Für das Bundesamt für Wald haben wir in einer fachlich wie technisch sehr fruchtbaren Kooperation die Österreichische Bodenkarte neu gestaltet.</p>
-                    <p>Dabei wurde das alte, stark an ein WebGis angelehnte Produkt durch eine moderne, serverless funktionierende responsive Web-Applikation ersetzt.</p>
-                    <p>Vor allem die Aufbereitung der umfangreichen Daten zur eleganten und performativen Kartendarstellung brachte einige Herausforderungen mit sich, die wir aber zur Zufriedenheit des Kunden meistern konnten.</p>
-                    <p>Eine sehr gute Enduser-Akzeptanz brachte diesem Projekt große Aufmerksamkeit. Die Karte wird aktuell um Fachkarten erweitert.</p></td>
-                  <tr><td>Schwerpunkte:</td><td><ul>
-                    <li>Erstellung einer performativen Karte</li>
-                    <li>Erstellen einer optimalen UI/UX, Spannungsfeld Bedienbarkeit kontra Datenmenge / -vielfalt</li>
-                    <li>Responsive Nutzbarkeit</li>
-                    <li>PDF Export</li>
-              </ul></td></tr>
-              <tr><td>Besonderheiten:</td><td><ul>
-                <li>Aufbereitung von Datenbank-Daten aus über 50 Jahren Erheberarbeit</li>
+          <h2>Österreichische Bodenkarte</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für das Bundesamt für Wald haben wir in einer fachlich wie
+                technisch sehr fruchtbaren Kooperation die Österreichische
+                Bodenkarte neu gestaltet.
+              </p>
+              <p>
+                Dabei wurde das alte, stark an ein WebGis angelehnte Produkt
+                durch eine moderne, serverless funktionierende responsive
+                Web-Applikation ersetzt.
+              </p>
+              <p>
+                Vor allem die Aufbereitung der umfangreichen Daten zur eleganten
+                und performativen Kartendarstellung brachte einige
+                Herausforderungen mit sich, die wir aber zur Zufriedenheit des
+                Kunden meistern konnten.
+              </p>
+              <p>
+                Eine sehr gute Enduser-Akzeptanz brachte diesem Projekt große
+                Aufmerksamkeit. Die Karte wird aktuell um Fachkarten erweitert.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Erstellung einer performativen Karte</li>
+                <li>
+                  Erstellen einer optimalen UI/UX, Spannungsfeld Bedienbarkeit
+                  kontra Datenmenge / -vielfalt
+                </li>
+                <li>Responsive Nutzbarkeit</li>
+                <li>PDF Export</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Aufbereitung von Datenbank-Daten aus über 50 Jahren
+                  Erheberarbeit
+                </li>
                 <li>Serverless Web Applikation</li>
                 <li>Tile-Erstellung mit Zoomlevel-reponsiver Detaillierung</li>
                 <li>Import von individuellen Shape Files als Overlay</li>
-              </ul></td></tr>
-              <tr><td>Zeitraum:</td>
-                  <td>2018 bis heute</td></tr>
-                  <tr><td>Link:</td>
-                  <td><a href="https://www.bodenkarte.at/" target="_blank">www.bodenkarte.at</a></td></tr>
-                  <tr><td>Kunde:</td>
-                    <td><a href="https://www.bfw.gv.at/" target="_blank">BFW&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-bfw.png" class="reflogo"></a></td></tr>
-                </table>
-              <div class="thumbs"></div>
-              <div class="whiteout"></div>
-              <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+              </ul>
+            </div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2018 bis heute</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://www.bodenkarte.at/" target="_blank"
+                >www.bodenkarte.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.bfw.gv.at/" target="_blank"
+                >BFW&nbsp;&nbsp;&nbsp;<img
+                  src="referenzen/logo-bfw.png"
+                  class="reflogo"
+              /></a>
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="elab" filecount="8">
-            <div class="bigimg"></div>
-              <h2>Landestraßenzustandserfassung NÖ</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Zu erstellen war eine Applikation zur Erhebung des Zustands der Niederösterreichischen Landesstraßen L und B. Bei den Landesstraßen wird nur der Nutzungsstreifen Fahrbahn erhoben, da sämtliche Gehsteige, etc. sich nicht im Landeseigentum befinden. Die Erhebung erfolgt aus dem Auto heraus mittels Android-Tablets der NÖ-Landesregierung. Die geographische Datenbank (Nutzungsstreifen Fahrbahn) wurde so angelegt, dass sie die Informationen betreffend die Fahrbahnschäden und Maßnahmen auf die GIP referenziert aufnehmen konnte.</p>
-                      <p>Als Ergebnis der gesamten Erhebung sollten die Zustandserhebung und Maßnahmenfestlegung in die NÖ-Straßendatenbank exportiert werden können. Dazu mussten dort im Vorfeld entsprechende Datenstrukturen in enger Zusammenarbeit mit dem Auftraggeber angelegt werden.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Einfache Usability, Anlehnung an veraltete Bestandsapplikation, um Nutzern Umstieg zu erleichtern</li>
-                      <li>Karte mit Selektor der Daten-Features (Mobile, Web)</li>
-                      <li>Datenfenster bzw. Feature-Editor zum Bearbeiten der Features wie Nutzungsstreifen etc. (Mobile, Web)</li>
-                      <li>Touchscreen-optimierte Bewertung und Maßnahmensetzung von Nutzungsstreifen</li>
-                      <li>Überblicksdarstellung der bereits Erhobenen Zustände</li>
-                      <li>Export und Auswertung</li>
-                    </ul></td></tr>
+          <div class="bigimg"></div>
+          <h2>Landestraßenzustandserfassung NÖ</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Zu erstellen war eine Applikation zur Erhebung des Zustands der
+                Niederösterreichischen Landesstraßen L und B. Bei den
+                Landesstraßen wird nur der Nutzungsstreifen Fahrbahn erhoben, da
+                sämtliche Gehsteige, etc. sich nicht im Landeseigentum befinden.
+                Die Erhebung erfolgt aus dem Auto heraus mittels Android-Tablets
+                der NÖ-Landesregierung. Die geographische Datenbank
+                (Nutzungsstreifen Fahrbahn) wurde so angelegt, dass sie die
+                Informationen betreffend die Fahrbahnschäden und Maßnahmen auf
+                die GIP referenziert aufnehmen konnte.
+              </p>
+              <p>
+                Als Ergebnis der gesamten Erhebung sollten die Zustandserhebung
+                und Maßnahmenfestlegung in die NÖ-Straßendatenbank exportiert
+                werden können. Dazu mussten dort im Vorfeld entsprechende
+                Datenstrukturen in enger Zusammenarbeit mit dem Auftraggeber
+                angelegt werden.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Einfache Usability, Anlehnung an veraltete
+                  Bestandsapplikation, um Nutzern Umstieg zu erleichtern
+                </li>
+                <li>Karte mit Selektor der Daten-Features (Mobile, Web)</li>
+                <li>
+                  Datenfenster bzw. Feature-Editor zum Bearbeiten der Features
+                  wie Nutzungsstreifen etc. (Mobile, Web)
+                </li>
+                <li>
+                  Touchscreen-optimierte Bewertung und Maßnahmensetzung von
+                  Nutzungsstreifen
+                </li>
+                <li>Überblicksdarstellung der bereits Erhobenen Zustände</li>
+                <li>Export und Auswertung</li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <ul>
-                          <li>Offline-Modus</li>
-                          <li>GIP-Referenzierung, Vektorkacheln</li>
-                          <li>Da es sich bei der geplanten Applikation um eine reine Webanwendung handelt, ist diese unabhängig von der Hardware und mit neuen Daten wiederverwendbar.</li>
-                        </ul>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>Offline-Modus</li>
+                <li>GIP-Referenzierung, Vektorkacheln</li>
+                <li>
+                  Da es sich bei der geplanten Applikation um eine reine
+                  Webanwendung handelt, ist diese unabhängig von der Hardware
+                  und mit neuen Daten wiederverwendbar.
+                </li>
+              </ul>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2019 - 2020</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td>Amt der NÖ Landesregierung Abteilung ST4-Landesstraßenbau und -verwaltung</td></tr>
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2019 - 2020</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              Amt der NÖ Landesregierung Abteilung ST4-Landesstraßenbau und
+              -verwaltung
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="gip2-" filecount="4">
-            <div class="bigimg"></div>
-              <h2>GIP v2 - Consulting & Workshops</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td>
-                      <p>Für die GIP v2 (Graphen-Integrations-Plattform) sollte zumindest als Denkansatz die Softwarearchitektur von der Datenbank über die Schnittstellen bis zu den Applikationen radikal neu gedacht werden. Die Idee war die Schaffung einer mächtigen Middleware und in Folge einer Reihe rein webbasierter Clients, welcher modular aufgebaut wären und sich daher für die Entwicklung von Einzelkomponenten (z.B. Layer-Loader, Geometrie- und Formulareditoren, Abfragewerkzeuge) durch verschiedene Auftragnehmer/Entwickler eignen.</p>
-                      <p>Auf Basis dieser erstellten Einzelkomponenten können dann anwendungsbezogene Clients entwickelt werden, um eine einheitliche UX/UI-Erfahrung mit sämtlichen GIP-Anwendungen zu ermöglichen. Es gab allerdings erhebliche Zweifel unter den Stakeholdern und (sehr zahlreichen) Anwendern, ob dies technisch überhaupt machbar sei.</p>
-                      <p>Unsere Aufgabe war es, eine Client- / Server-Architektur für derartige Web-Tools zu entwickeln und auf Basis dieser Architektur (Proof of Concept) einige Basiskomponenten (Kartenansicht, Messen, Snapping, Einbinden von Kachel- und Vektor-Layern) zu entwickeln. In einer Reihe von Workshops wurde zunächst im Kreis der technisch versierten Entscheidungsträger eine moderne Anwendungs-Architektur auf Basis webbasierender Dashboards und Micro-Apps erarbeitet. Diese wurde dann prototypisch für einige relevante Use-Cases technisch beschrieben und als Wireframe-Skizzen entworfen. Für bestimmte Details wurden konkrete Beispiel-Apps implementiert.</p>
-                      <p> In Folge galt es, die Stakeholder der Bundesländer (primär Nutzer) von diesem Konzept zu überzeugen. Zudem sollte dem Auftraggeber eine lastenhefttaugliche Beschreibung der Software-Architektur auf Basis von Komponenten und Clients zur Verfügung gestellt werden.</p>
-                      <p>Zusätzlich wurde im Rahmen einer bezahlten Diplomarbeit von einem Studenten mit unserer Unterstützung ein konkreter Use-Case nutzungsfertig ausprogrammiert und präsentiert.</p>
-                    </td></tr>
+          <div class="bigimg"></div>
+          <h2>GIP v2 - Consulting & Workshops</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Für die GIP v2 (Graphen-Integrations-Plattform) sollte zumindest
+                als Denkansatz die Softwarearchitektur von der Datenbank über
+                die Schnittstellen bis zu den Applikationen radikal neu gedacht
+                werden. Die Idee war die Schaffung einer mächtigen Middleware
+                und in Folge einer Reihe rein webbasierter Clients, welcher
+                modular aufgebaut wären und sich daher für die Entwicklung von
+                Einzelkomponenten (z.B. Layer-Loader, Geometrie- und
+                Formulareditoren, Abfragewerkzeuge) durch verschiedene
+                Auftragnehmer/Entwickler eignen.
+              </p>
+              <p>
+                Auf Basis dieser erstellten Einzelkomponenten können dann
+                anwendungsbezogene Clients entwickelt werden, um eine
+                einheitliche UX/UI-Erfahrung mit sämtlichen GIP-Anwendungen zu
+                ermöglichen. Es gab allerdings erhebliche Zweifel unter den
+                Stakeholdern und (sehr zahlreichen) Anwendern, ob dies technisch
+                überhaupt machbar sei.
+              </p>
+              <p>
+                Unsere Aufgabe war es, eine Client- / Server-Architektur für
+                derartige Web-Tools zu entwickeln und auf Basis dieser
+                Architektur (Proof of Concept) einige Basiskomponenten
+                (Kartenansicht, Messen, Snapping, Einbinden von Kachel- und
+                Vektor-Layern) zu entwickeln. In einer Reihe von Workshops wurde
+                zunächst im Kreis der technisch versierten Entscheidungsträger
+                eine moderne Anwendungs-Architektur auf Basis webbasierender
+                Dashboards und Micro-Apps erarbeitet. Diese wurde dann
+                prototypisch für einige relevante Use-Cases technisch
+                beschrieben und als Wireframe-Skizzen entworfen. Für bestimmte
+                Details wurden konkrete Beispiel-Apps implementiert.
+              </p>
+              <p>
+                In Folge galt es, die Stakeholder der Bundesländer (primär
+                Nutzer) von diesem Konzept zu überzeugen. Zudem sollte dem
+                Auftraggeber eine lastenhefttaugliche Beschreibung der
+                Software-Architektur auf Basis von Komponenten und Clients zur
+                Verfügung gestellt werden.
+              </p>
+              <p>
+                Zusätzlich wurde im Rahmen einer bezahlten Diplomarbeit von
+                einem Studenten mit unserer Unterstützung ein konkreter Use-Case
+                nutzungsfertig ausprogrammiert und präsentiert.
+              </p>
+            </div>
 
-                      <tr><td>Schwerpunkte:</td><td><ul>
-                        <li>Abhaltung eines Kick-Off Meetings zur Grundlagenerfassung und von 2 ganztägigen Workshops vor Ort. Dazwischen bei Bedarf (Klärung von Detail-Fragen) Video-Konferenzen direkt mit den jeweils zuständigen Ansprechpartnern.</li>
-                        <li>Erstellung von Skizzen / Diagrammen / Wireframes als Vorbereitung für die Workshops. </li>
-                        <li>Erarbeitung einer neuen Datenstruktur + Schnittstellen-Landschaft für die GIP2 (auf beschreibender Ebene), Überprüfung auf Machbarkeit durch die mit der Datenbank-Umsetzung beauftragten Firma</li>
-                        <li>Erarbeiten von umsetzbaren Workflows in Form von Skizzen, Erstellung kleiner Software-Prototypen (Web Clients) als Proof of Concept</li>
-                        <li>Abhalten von ca. 2stündigen Präsentationen im Rahmen zweier GIP-Tage in Innsbruck und Linz</li>
-                    </ul></td></tr>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Abhaltung eines Kick-Off Meetings zur Grundlagenerfassung und
+                  von 2 ganztägigen Workshops vor Ort. Dazwischen bei Bedarf
+                  (Klärung von Detail-Fragen) Video-Konferenzen direkt mit den
+                  jeweils zuständigen Ansprechpartnern.
+                </li>
+                <li>
+                  Erstellung von Skizzen / Diagrammen / Wireframes als
+                  Vorbereitung für die Workshops.
+                </li>
+                <li>
+                  Erarbeitung einer neuen Datenstruktur +
+                  Schnittstellen-Landschaft für die GIP2 (auf beschreibender
+                  Ebene), Überprüfung auf Machbarkeit durch die mit der
+                  Datenbank-Umsetzung beauftragten Firma
+                </li>
+                <li>
+                  Erarbeiten von umsetzbaren Workflows in Form von Skizzen,
+                  Erstellung kleiner Software-Prototypen (Web Clients) als Proof
+                  of Concept
+                </li>
+                <li>
+                  Abhalten von ca. 2stündigen Präsentationen im Rahmen zweier
+                  GIP-Tage in Innsbruck und Linz
+                </li>
+              </ul>
+            </div>
 
-                    <tr><td>Besonderheiten:</td>
-                      <td>
-                        <p>Konkrete Umsetzung eines prototypischen Workflows (“Kreisverkehr Tool”) durch einen von uns gecoachten Studenten der Geoinformatik im Rahmen einer bezahlten Diplomarbeit.</p>
-                      </td>
-                    </tr>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <p>
+                Konkrete Umsetzung eines prototypischen Workflows (“Kreisverkehr
+                Tool”) durch einen von uns gecoachten Studenten der
+                Geoinformatik im Rahmen einer bezahlten Diplomarbeit.
+              </p>
+            </div>
 
-
-                    <tr><td>Zeitraum:</td>
-                    <td>2018 - 2020</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://mobilitaetsdaten.gv.at/" target="_blank">ÖVDAT</a></td></tr>
-
-                    </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2018 - 2020</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://mobilitaetsdaten.gv.at/" target="_blank"
+                >ÖVDAT</a
+              >
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
         <div class="oneproject" filename="estrab" filecount="11">
           <div class="bigimg"></div>
-        <h2>Gemeindestraßen-<br>Zustandserfassung</h2>
-        <table>
-            <tr><td>Beschreibung:</td>
-              <td><p>eStraB – Elektronische Gemeindestraßenzustandserfassung und -bewertung. Für die Straßenbauabteilung (ST4) des Landes Niederösterreich wurde ein webbasiertes Applikations-Paket zur Erfassung und Bewertung des Straßenzustandes durch fußläufige Begehung erstellt.</p>
-                <p>Mit einem Tablet sollen sämtliche relevante Informationen per Touch eingegeben werden, Fotos verortet sowie Anmerkungen eingegeben werden können. Dabei wird ein modularer Ansatz gewählt, d.h. die Kernfunktionalitäten sollen in jedem Fall nur einmal umgesetzt werden und kommen dann in verschiedenen Clients zur Anwendung.</p>
-                <tr><td>Schwerpunkte:</td><td><ul>
-                  <li>Einfache Usability </li>
-                  <li>Karte mit Selektor der Daten-Features (Mobile, Web) </li>
-                  <li>Datenfenster bzw. Feature-Editor zum Bearbeiten der Features wie Nutzungsstreifen etc. (Mobile, Web) </li>
-                  <li>Touchscreen-optimierte Bewertung und Maßnahmensetzung von Nutzungsstreifen </li>
-                  <li>Aktualisierung von GIP-Nutzungsstreifen (Synchronisation) </li>
-                  <li>Überblicksdarstellung der bereits Erhobenen Zustände </li>
-                  <li>Export und Auswertung </li>
-                </ul></td></tr>
-              <tr><td>Besonderheiten:</td>
-              <td><ul>
-                <li>Offline-Modus </li>
-                <li>GIP-Referenzierung </li>
-                <li>Vektorkacheln </li>
-                <li>Import Bestandserhebung </li>
-                <li>Autom. Ausrichtung der Erhebungsrichtung </li>
-                <li>Autom. Übertragen von Festlegungen auf anschließende Kanten</li>
-              </ul></td>
-          </tr>
-              <tr><td>Zeitraum:</td>
-              <td>2018 bis heute</td></tr>
-              <tr><td>Kunde:</td>
-                <td><a href="http://www.noe.gv.at/noe/index.html" target="_blank">Land Niederösterreich</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-landnoe.png" class="reflogo"></td></tr>
-            </table>
+          <h2>Gemeindestraßen-<br />Zustandserfassung</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                eStraB – Elektronische Gemeindestraßenzustandserfassung und
+                -bewertung. Für die Straßenbauabteilung (ST4) des Landes
+                Niederösterreich wurde ein webbasiertes Applikations-Paket zur
+                Erfassung und Bewertung des Straßenzustandes durch fußläufige
+                Begehung erstellt.
+              </p>
+              <p>
+                Mit einem Tablet sollen sämtliche relevante Informationen per
+                Touch eingegeben werden, Fotos verortet sowie Anmerkungen
+                eingegeben werden können. Dabei wird ein modularer Ansatz
+                gewählt, d.h. die Kernfunktionalitäten sollen in jedem Fall nur
+                einmal umgesetzt werden und kommen dann in verschiedenen Clients
+                zur Anwendung.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Einfache Usability</li>
+                <li>Karte mit Selektor der Daten-Features (Mobile, Web)</li>
+                <li>
+                  Datenfenster bzw. Feature-Editor zum Bearbeiten der Features
+                  wie Nutzungsstreifen etc. (Mobile, Web)
+                </li>
+                <li>
+                  Touchscreen-optimierte Bewertung und Maßnahmensetzung von
+                  Nutzungsstreifen
+                </li>
+                <li>
+                  Aktualisierung von GIP-Nutzungsstreifen (Synchronisation)
+                </li>
+                <li>Überblicksdarstellung der bereits Erhobenen Zustände</li>
+                <li>Export und Auswertung</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>Offline-Modus</li>
+                <li>GIP-Referenzierung</li>
+                <li>Vektorkacheln</li>
+                <li>Import Bestandserhebung</li>
+                <li>Autom. Ausrichtung der Erhebungsrichtung</li>
+                <li>
+                  Autom. Übertragen von Festlegungen auf anschließende Kanten
+                </li>
+              </ul>
+            </div>
+
+            <div class="label">Zeitraum:</div>
+            <div class="text">2018 bis heute</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="http://www.noe.gv.at/noe/index.html" target="_blank"
+                >Land Niederösterreich</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-landnoe.png"
+                class="reflogo" />
+            </div>
+          </div>
           <div class="thumbs"></div>
           <div class="whiteout"></div>
-          <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-      </div>                    
-
-          <div class="oneproject" filename="lac" filecount="6">
-            <div class="bigimg"></div>
-          <h2>lower-austria-contemporary.at</h2>
-          <table>
-              <tr><td>Beschreibung:</td>
-                <td><p>Neugestaltung des Webportals: Das Portal wurde als Single Page Web Applikation konzipiert, d.h. durch die Navigation findet kein Seitenwechsel im traditionellen Sinne statt, die Informationen werden durch Overlays, PopUps etc. verfügbar gemacht.</p>
-                  <p>Dadurch wird garantiert, dass sich kein Nutzer in der Seitenstruktur "verliert".</p>
-                <tr><td>Schwerpunkte:</td><td><ul>
-                  <li>Landkarte von NÖ mit allen relevanten Orten eingezeichnet. (Verortung mittels Koordinaten) und Verlinkung der Institutionen mit deren Websites </li>
-                  <li>Alphabetischer Index der Institutionen und Verlinkung mit deren Websites </li>
-                  <li>Geringer Aufwand beim Editieren der Webseite </li>
-                  <li>Responsive Darstellung</li>
-                </ul></td></tr>
-                <tr><td>Besonderheiten:</td>
-                <td><ul>
-                  <li>Einfache Wartung der Institutionen im Backend </li>
-                  <li>Barrierefreie Version </li>
-                  <li>Kartenzentrierter Aufbau </li>
-                </ul></td>
-            </tr>
-                <tr><td>Zeitraum:</td>
-                <td>2018 bis 2019</td></tr>
-                <tr><td>Link:</td>
-                <td><a href="https://lower-austria-contemporary.at" target="_blank">lower-austria-contemporary.at</a></td></tr>
-                <tr><td>Kunde:</td>
-                  <td><a href="http://www.noe.gv.at/noe/index.html" target="_blank">Abteilung Kunst und Kultur – K1, Land Niederösterreich</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-landnoe.png" class="reflogo"></td></tr>
-              </table>
-            <div class="thumbs"></div>
-            <div class="whiteout"></div>
-            <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-        </div>                    
-
-          <div class="oneproject" filename="haltepunkt" filecount="06">
-                <div class="bigimg"></div>
-              <h2>Tool: Haltepunkterfassung</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Gleichsam als Ergänzung zur Expansion der ISTmobil Dispositionsplattform ist dieses Werkzeug zur Erfassung von Haltepunkten (oder allgemeinen &quot;Points of Interesst&quot; entstanden.</p>
-                      <p>Verschiedene Benutzer-Ebenen bieten eine unterschiedliche Palette an Zugriffsmöglichkeiten. Zusätzlich zu den Standard-Werkzeugen zum Anlegen von Punkten (mit Stammdaten) gibt es auch die Möglichkeit, vordefinierte Listen per Excel-Upload in des System zu bringen</p>
-                <p>Die Kartenansicht kann zwischen 3 verschiedenen Modi umgeschalten werden und bietet die OSM, die Basemap und das Luftbild (OthoMap) als Basismaterial.</p>
-                <p>Einsatzziel der Online-Applikation ist das verteilte Erfassung geografischer Daten durch Zugangserteilung an div. Stellen wie Gemeinden, Bezirke, Planungsbüros etc.</p></td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li> Programmierung Web-Applikation</li>
-                      <li>Kartenapplikation OpenLayers</li>
-                </ul></td></tr>
-                    <tr><td>Besonderheiten:</td>
-                    <td><ul>
-                      <li>Unterschiedliche Benutzerebenen (je nach Login) erhalten verschiedene Werkzeuge</li>
-                      <li>Excel-Import Schnittstelle mit Versionsverwaltung</li>
-                      <li>Umschaltbare Karten</li>
-                    </ul>                        </td>
-                </tr>
-                    <tr><td>Zeitraum:</td>
-                    <td>2016 - heute</td></tr>
-                    <tr><td>Kunde:</td>
-                      <td><a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a>&nbsp;&nbsp;&nbsp;<img src="referenzen/logo-istmobil.png" class="reflogo"></td></tr>
-                </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-            </div>
-
-            <div class="oneproject" filename="klingbacher" filecount="03">
-                <div class="bigimg"></div>
-              <h2>Geodienst-Modul für<br>Risk Assessment Plattform</h2>
-              <table>
-                  <tr><td>Beschreibung:</td>
-                    <td><p>Der Kunde nutzte bereits Google Maps als Kartendienst und wollte diesen, nicht zuletzt aufgrund der zu erwartenden hohen Kosten, durch eine flexiblere und günstiger Lösung ersetzen. Schließlich wurde ein Kartenmodul auf Basis von OpenLayers entwickelt.</p>
-                    <p>Damit lassen sich Geodienste (Karten, Geocoding, Routing) wie Bing Maps, Here oder OpenStreetMap ohne zusätzlichen Aufwand nutzen können. Damit ist es dem Kunden möglich, zwischen Dienstanbietern zu wechseln, ohne hierfür Änderungen am Source Code vornehmen zu müssen. Weiters können georeferenzierte Daten auf Kundenseite erstellt, modifiziert, gespeichert und dargestellt werden, ohne dass diese auf den Server des Kartendienstes übertragen zu müssen.</p>
-                    </td></tr>
-                    <tr><td>Schwerpunkte:</td><td><ul>
-                      <li>Beratung</li>
-                      <li>OpenLayers Entwicklung</li>
-                </ul></td></tr>
-                    <tr><td>Zeitraum:</td>
-                    <td>2016</td></tr>
-                    <tr><td>Kunde:</td>
-                    <td>Klingbacher IT Consulting</td></tr>
-                </table>
-                <div class="thumbs"></div>
-                <div class="whiteout"></div>
-                <div class="zoomout" onClick="onehandler(this,-2,event)"><i class="fa fa-arrow-circle-left"></i></div>
-            </div>
-				<div style="clear: both;"></div>
-			</div>
-            <div class="bubble right">
-                <h1>Hinweis:</h1>
-                <p>Wir bereiten diesen Bereich gerade für Sie auf. Besuchen Sie und in Kürze wieder, um mehr aufregende Projekte in Beschreibung und Bild begutachten zu können!</p>
-            </div>
-			<div class="refplaceholder"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
         </div>
 
-  		<script>refinit();</script>
-    </body>
+        <div class="oneproject" filename="lac" filecount="6">
+          <div class="bigimg"></div>
+          <h2>lower-austria-contemporary.at</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Neugestaltung des Webportals: Das Portal wurde als Single Page
+                Web Applikation konzipiert, d.h. durch die Navigation findet
+                kein Seitenwechsel im traditionellen Sinne statt, die
+                Informationen werden durch Overlays, PopUps etc. verfügbar
+                gemacht.
+              </p>
+              <p>
+                Dadurch wird garantiert, dass sich kein Nutzer in der
+                Seitenstruktur "verliert".
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Landkarte von NÖ mit allen relevanten Orten eingezeichnet.
+                  (Verortung mittels Koordinaten) und Verlinkung der
+                  Institutionen mit deren Websites
+                </li>
+                <li>
+                  Alphabetischer Index der Institutionen und Verlinkung mit
+                  deren Websites
+                </li>
+                <li>Geringer Aufwand beim Editieren der Webseite</li>
+                <li>Responsive Darstellung</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>Einfache Wartung der Institutionen im Backend</li>
+                <li>Barrierefreie Version</li>
+                <li>Kartenzentrierter Aufbau</li>
+              </ul>
+            </div>
+
+            <div class="label">Zeitraum:</div>
+            <div class="text">2018 bis 2019</div>
+            <div class="label">Link:</div>
+            <div class="text">
+              <a href="https://lower-austria-contemporary.at" target="_blank"
+                >lower-austria-contemporary.at</a
+              >
+            </div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="http://www.noe.gv.at/noe/index.html" target="_blank"
+                >Abteilung Kunst und Kultur – K1, Land Niederösterreich</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-landnoe.png"
+                class="reflogo" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
+
+        <div class="oneproject" filename="haltepunkt" filecount="06">
+          <div class="bigimg"></div>
+          <h2>Tool: Haltepunkterfassung</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Gleichsam als Ergänzung zur Expansion der ISTmobil
+                Dispositionsplattform ist dieses Werkzeug zur Erfassung von
+                Haltepunkten (oder allgemeinen &quot;Points of Interesst&quot;
+                entstanden.
+              </p>
+              <p>
+                Verschiedene Benutzer-Ebenen bieten eine unterschiedliche
+                Palette an Zugriffsmöglichkeiten. Zusätzlich zu den
+                Standard-Werkzeugen zum Anlegen von Punkten (mit Stammdaten)
+                gibt es auch die Möglichkeit, vordefinierte Listen per
+                Excel-Upload in des System zu bringen
+              </p>
+              <p>
+                Die Kartenansicht kann zwischen 3 verschiedenen Modi
+                umgeschalten werden und bietet die OSM, die Basemap und das
+                Luftbild (OthoMap) als Basismaterial.
+              </p>
+              <p>
+                Einsatzziel der Online-Applikation ist das verteilte Erfassung
+                geografischer Daten durch Zugangserteilung an div. Stellen wie
+                Gemeinden, Bezirke, Planungsbüros etc.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Programmierung Web-Applikation</li>
+                <li>Kartenapplikation OpenLayers</li>
+              </ul>
+            </div>
+            <div class="label">Besonderheiten:</div>
+            <div class="text">
+              <ul>
+                <li>
+                  Unterschiedliche Benutzerebenen (je nach Login) erhalten
+                  verschiedene Werkzeuge
+                </li>
+                <li>Excel-Import Schnittstelle mit Versionsverwaltung</li>
+                <li>Umschaltbare Karten</li>
+              </ul>
+            </div>
+
+            <div class="label">Zeitraum:</div>
+            <div class="text">2016 - heute</div>
+            <div class="label">Kunde:</div>
+            <div class="text">
+              <a href="https://www.istmobil.at" target="_blank">ISTmobil GmbH</a
+              >&nbsp;&nbsp;&nbsp;<img
+                src="referenzen/logo-istmobil.png"
+                class="reflogo" />
+            </div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
+
+        <div class="oneproject" filename="klingbacher" filecount="03">
+          <div class="bigimg"></div>
+          <h2>Geodienst-Modul für<br />Risk Assessment Plattform</h2>
+          <div class="boxcontent">
+            <div class="label">Beschreibung:</div>
+            <div class="text">
+              <p>
+                Der Kunde nutzte bereits Google Maps als Kartendienst und wollte
+                diesen, nicht zuletzt aufgrund der zu erwartenden hohen Kosten,
+                durch eine flexiblere und günstiger Lösung ersetzen. Schließlich
+                wurde ein Kartenmodul auf Basis von OpenLayers entwickelt.
+              </p>
+              <p>
+                Damit lassen sich Geodienste (Karten, Geocoding, Routing) wie
+                Bing Maps, Here oder OpenStreetMap ohne zusätzlichen Aufwand
+                nutzen können. Damit ist es dem Kunden möglich, zwischen
+                Dienstanbietern zu wechseln, ohne hierfür Änderungen am Source
+                Code vornehmen zu müssen. Weiters können georeferenzierte Daten
+                auf Kundenseite erstellt, modifiziert, gespeichert und
+                dargestellt werden, ohne dass diese auf den Server des
+                Kartendienstes übertragen zu müssen.
+              </p>
+            </div>
+            <div class="label">Schwerpunkte:</div>
+            <div class="text">
+              <ul>
+                <li>Beratung</li>
+                <li>OpenLayers Entwicklung</li>
+              </ul>
+            </div>
+            <div class="label">Zeitraum:</div>
+            <div class="text">2016</div>
+            <div class="label">Kunde:</div>
+            <div class="text">Klingbacher IT Consulting</div>
+          </div>
+          <div class="thumbs"></div>
+          <div class="whiteout"></div>
+          <div class="zoomout" onClick="onehandler(this,-2,event)">
+            <i class="fa fa-arrow-circle-left"></i>
+          </div>
+        </div>
+        <div style="clear: both"></div>
+      </div>
+      <div class="bubble right" style="display: none">
+        <h1>Hinweis:</h1>
+        <p>
+          Wir bereiten diesen Bereich gerade für Sie auf. Besuchen Sie und in
+          Kürze wieder, um mehr aufregende Projekte in Beschreibung und Bild
+          begutachten zu können!
+        </p>
+      </div>
+      <div class="refplaceholder"></div>
+    </div>
+
+    <script>
+      refinit();
+    </script>
+  </body>
 </html>
